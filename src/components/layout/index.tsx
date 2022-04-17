@@ -1,7 +1,8 @@
 import React, { ReactNode } from "react";
 import styled, { createGlobalStyle, ThemeProvider } from "styled-components";
-import { graphql, Link } from "gatsby";
+import { Link } from "gatsby";
 import { SocialIcon } from "../social-icon";
+import { Box, Flex } from "rebass";
 
 const GlobalStyle = createGlobalStyle`
   body,
@@ -14,14 +15,12 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-const Header = styled.div`
-  display: flex;
+const Header = styled(Flex)`
   height: 128px;
   margin-bottom: 40px;
   justify-content: flex-end;
   align-items: center;
   background-color: #fff;
-  padding: 0 75px;
 `;
 
 const MenuItem = styled(Link)<{ last?: boolean }>`
@@ -41,24 +40,18 @@ const Content = styled.div`
   align-items: center;
 `;
 
-const Footer = styled.div`
-  display: flex;
+const Footer = styled(Flex)`
   margin: 122px 0;
   justify-content: center;
 `;
 
 const FooterEmail = styled.a`
-  font-size: 24px;
+  font-size: 21px;
   font-style: normal;
   font-weight: 400;
   line-height: 28px;
   letter-spacing: 0em;
   color: ${(props) => props.theme.primary};
-  margin-right: 49px;
-`;
-
-const FirstSocialIcon = styled(SocialIcon)`
-  margin-right: 18px;
 `;
 
 interface LayoutProps {
@@ -76,19 +69,46 @@ export const Layout = ({
     <>
       <GlobalStyle />
       <ThemeProvider theme={{ primary: "#EA4AC5" }}>
-        <Header>
-          <MenuItem to="/">work</MenuItem>
-          <MenuItem last to="/about">
+        <Header px={["24px", "36px", "75px"]}>
+          <MenuItem
+            activeStyle={{ color: "#EA4AC5", textDecoration: "underline" }}
+            to="/"
+          >
+            work
+          </MenuItem>
+          <MenuItem
+            activeStyle={{ color: "#EA4AC5", textDecoration: "underline" }}
+            last
+            to="/about/"
+          >
             about
           </MenuItem>
         </Header>
         <Content>{children}</Content>
-        <Footer>
-          <FooterEmail href="mailto:gatticristina99@gmail.com">
-            gatticristina99@gmail.com
-          </FooterEmail>
-          <FirstSocialIcon imageUrl={linkedinSvgUrl} />
-          <SocialIcon imageUrl={emailSvgUrl} />
+        <Footer
+          width="100%"
+          flexDirection={["column", "column", "row"]}
+          alignItems={["center"]}
+          mt="60px"
+          mb="80px"
+        >
+          <Box mr={["0px", "0px", "49px"]} mb={["16px", "16px", "0px"]}>
+            <FooterEmail href="mailto:gatticristina99@gmail.com">
+              gatticristina99@gmail.com
+            </FooterEmail>
+          </Box>
+          <Flex flexDirection={["row", "row", "column"]}>
+            <Box mr={["18px", "18px", "0px"]} mb={["0px", "0px", "18px"]}>
+              <SocialIcon
+                href="https://www.linkedin.com/in/cristinagatti99/"
+                imageUrl={linkedinSvgUrl}
+              />
+            </Box>
+            <SocialIcon
+              href="mailto:gatticristina99@gmail"
+              imageUrl={emailSvgUrl}
+            />
+          </Flex>
         </Footer>
       </ThemeProvider>
     </>

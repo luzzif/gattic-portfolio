@@ -1,6 +1,7 @@
 import { graphql } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
+import { Box, Flex } from "rebass";
 import styled from "styled-components";
 import { Layout } from "../components/layout";
 import { SocialIcon } from "../components/social-icon";
@@ -20,19 +21,9 @@ const OuterContainer = styled.div`
   justify-content: center;
 `;
 
-const InnerContainer = styled.div`
-  width: 60%;
-  display: flex;
-`;
-
-const FlexColumnContainer = styled.div`
-  width: 70%;
+const FlexColumnContainer = styled(Flex)`
   display: flex;
   flex-direction: column;
-`;
-
-const ImageContainer = styled.div`
-  width: 30%;
 `;
 
 const Title = styled.div`
@@ -41,7 +32,6 @@ const Title = styled.div`
   line-height: 25px;
   letter-spacing: 0em;
   margin-bottom: 22px;
-  margin-right: 77px;
 `;
 
 const Body = styled.div`
@@ -51,7 +41,6 @@ const Body = styled.div`
   line-height: 25px;
   letter-spacing: 0em;
   margin-bottom: 28px;
-  margin-right: 77px;
 `;
 
 const BoldFooterText = styled.div`
@@ -62,6 +51,7 @@ const BoldFooterText = styled.div`
   text-align: center;
   max-width: 674px;
   margin-top: 88px;
+  padding: 0 20px;
 `;
 
 const ConnectWithMeText = styled.div`
@@ -72,6 +62,7 @@ const ConnectWithMeText = styled.div`
   line-height: 25px;
   letter-spacing: 0em;
   margin-top: 32px;
+  padding: 0 20px;
 `;
 
 const Spacer = styled.div`
@@ -97,8 +88,15 @@ const About = ({ data }: AboutProps) => {
         <br /> HAPPY TO SEE YOU AGAIN!
       </IntroductionText>
       <OuterContainer>
-        <InnerContainer>
-          <FlexColumnContainer>
+        <Flex
+          flexDirection={["column-reverse", "column", "row"]}
+          width={["100%", "100%", "60%"]}
+          px="20px"
+        >
+          <FlexColumnContainer
+            width={["100%", "100%", "70%"]}
+            marginRight={["0px", "0px", "77px"]}
+          >
             <Title>Who am I?</Title>
             <Body>
               I’m a <b>junior UX designer</b> with a backgorund in customer
@@ -132,15 +130,21 @@ const About = ({ data }: AboutProps) => {
               all my works and everywhere I go.
             </Body>
           </FlexColumnContainer>
-          <ImageContainer>
-            <StaticImage
-              aspectRatio={9 / 16}
-              alt="me"
-              src="../images/cristina.jpg"
-              height={600}
-            />
-          </ImageContainer>
-        </InnerContainer>
+          <Flex
+            justifyContent="center"
+            width={["100%", "100%", "30%"]}
+            mb={["40px", "40px", "0px"]}
+          >
+            <Box>
+              <StaticImage
+                aspectRatio={9 / 16}
+                alt="me"
+                src="../images/cristina.jpg"
+                height={600}
+              />
+            </Box>
+          </Flex>
+        </Flex>
       </OuterContainer>
       <BoldFooterText>
         Want to talk about what I could bring to you or why am I the right fit
@@ -148,10 +152,16 @@ const About = ({ data }: AboutProps) => {
       </BoldFooterText>
       <ConnectWithMeText>
         Connect with me on <Spacer />
-        <SocialIcon imageUrl={data.linkedin.publicURL} />
+        <SocialIcon
+          href="https://www.linkedin.com/in/cristinagatti99/"
+          imageUrl={data.linkedin.publicURL}
+        />
         <Spacer />
         or shoot me an <Spacer />
-        <SocialIcon imageUrl={data.email.publicURL} />
+        <SocialIcon
+          href="mailto:gatticristina99@gmail.com"
+          imageUrl={data.email.publicURL}
+        />
       </ConnectWithMeText>
       <SignatureContainer>
         <StaticImage

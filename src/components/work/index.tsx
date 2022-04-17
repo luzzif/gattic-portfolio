@@ -6,12 +6,15 @@ import styled from "styled-components";
 const OuterContainer = styled(Link)`
   display: flex;
   justify-content: center;
-  width: 70%;
-  height: 350px;
-  background-color: #f5f5f5;
-  border-radius: 20px;
   text-decoration: none;
   color: initial;
+  width: 100%;
+`;
+
+const RootFlex = styled(Flex)`
+  background-color: #f5f5f5;
+  border-radius: 20px;
+  padding: 0 28px;
 `;
 
 interface WorkProps {
@@ -33,42 +36,50 @@ export const Work = ({
 }: WorkProps) => {
   return (
     <OuterContainer className={className} to={to}>
-      <Flex
-        flexDirection={reversed ? "row-reverse" : "row"}
-        justifyContent="space-between"
-        alignItems="center"
-        width="65%"
+      <RootFlex
+        minHeight={["auto", "auto", "350px"]}
+        width={["90%", "80%", "70%"]}
+        height={["auto", "auto", "350px"]}
+        justifyContent="center"
       >
-        <Box>{image}</Box>
         <Flex
-          justifyContent="center"
+          flexDirection={["column", "column", reversed ? "row-reverse" : "row"]}
+          py={["24px", "24px", "0px"]}
+          justifyContent={["flex-start", "space-between"]}
           alignItems="center"
-          flexDirection="column"
+          width={["100%", "90%", "65%"]}
         >
-          <Text
-            fontFamily="EB Garamond"
-            fontSize="48px"
-            fontStyle="normal"
-            fontWeight="400"
-            lineHeight="55px"
-            letterSpacing="0em"
-            marginBottom="20px"
-            textAlign="center"
+          <Box mb={["24px", "24px", "0px"]}>{image}</Box>
+          <Flex
+            justifyContent="center"
+            alignItems="center"
+            flexDirection="column"
           >
-            {title}
-          </Text>
-          <Text
-            maxWidth="227px"
-            fontSize="21px"
-            fontWeight="300"
-            lineHeight="25px"
-            letterSpacing="0em"
-            textAlign="center"
-          >
-            {description}
-          </Text>
+            <Text
+              fontFamily="EB Garamond"
+              fontSize="48px"
+              fontStyle="normal"
+              fontWeight="400"
+              lineHeight="55px"
+              letterSpacing="0em"
+              marginBottom="20px"
+              textAlign="center"
+            >
+              {title}
+            </Text>
+            <Text
+              maxWidth="227px"
+              fontSize="21px"
+              fontWeight="300"
+              lineHeight="25px"
+              letterSpacing="0em"
+              textAlign="center"
+            >
+              {description}
+            </Text>
+          </Flex>
         </Flex>
-      </Flex>
+      </RootFlex>
     </OuterContainer>
   );
 };

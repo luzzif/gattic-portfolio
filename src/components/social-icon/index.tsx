@@ -26,13 +26,16 @@ const Content = styled.img`
 
 interface SocialIconProps {
   imageUrl: string;
+  href: string;
   className?: any;
 }
 
-export const SocialIcon = ({ imageUrl, className }: SocialIconProps) => {
+export const SocialIcon = ({ imageUrl, href, className }: SocialIconProps) => {
   return (
-    <Container className={className}>
-      <Content src={imageUrl} />
-    </Container>
+    <a target="_blank" href={href} rel="noopener noreferrer">
+      <Container className={className}>
+        <Content src={imageUrl} />
+      </Container>
+    </a>
   );
 };
