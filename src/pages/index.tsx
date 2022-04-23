@@ -21,6 +21,15 @@ const SpacedWork = styled(Work)`
   margin-bottom: 50px;
 `;
 
+const ImageContainer = styled(Box)`
+  position: relative;
+`;
+
+const HeaderImage = styled(Image)`
+  position: absolute;
+  top: 0px;
+`;
+
 interface IndexProps {
   data: any;
 }
@@ -31,23 +40,33 @@ const Index = ({ data }: IndexProps) => {
       linkedinSvgUrl={data.linkedin.publicURL}
       behanceSvgUrl={data.behance.publicURL}
     >
-      <Box width="100%" mt="40px" mb={["60px", "60px", "100px"]}>
-        <Image
-          width="100%"
-          display={["block", "none"]}
-          src={data.headerMobile.publicURL}
-        />
-        <Image
-          width="100%"
-          display={["none", "block", "none"]}
-          src={data.headerTablet.publicURL}
-        />
-        <Image
-          width="100%"
-          display={["none", "none", "block"]}
-          src={data.headerDesktop.publicURL}
-        />
-      </Box>
+      <ImageContainer
+        width="100%"
+        mt="40px"
+        mb={["60px", "60px", "100px"]}
+        display={["block", "none"]}
+        paddingTop="48.9795918%"
+      >
+        <HeaderImage width="100%" src={data.headerMobile.publicURL} />
+      </ImageContainer>
+      <ImageContainer
+        width="100%"
+        mt="40px"
+        mb={["60px", "60px", "100px"]}
+        display={["none", "block", "none"]}
+        paddingTop="34.2857143%"
+      >
+        <HeaderImage width="100%" src={data.headerTablet.publicURL} />
+      </ImageContainer>
+      <ImageContainer
+        width="100%"
+        mt="40px"
+        mb={["60px", "60px", "100px"]}
+        display={["none", "none", "block"]}
+        paddingTop="18.8476563%"
+      >
+        <HeaderImage width="100%" src={data.headerDesktop.publicURL} />
+      </ImageContainer>
       <Flex
         flexDirection={["column", "column", "row"]}
         marginBottom={["60px", "60px", "90px"]}
