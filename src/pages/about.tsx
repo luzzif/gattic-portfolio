@@ -1,7 +1,7 @@
 import { graphql } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
-import { Box, Flex } from "rebass";
+import { Box, Flex, Text } from "rebass";
 import styled from "styled-components";
 import { Layout } from "../components/layout";
 import { SocialIcon } from "../components/social-icon";
@@ -14,6 +14,7 @@ const IntroductionText = styled.div`
   letter-spacing: 0em;
   text-align: center;
   margin-bottom: 56px;
+  padding: 0 20px;
 `;
 
 const OuterContainer = styled.div`
@@ -54,8 +55,7 @@ const BoldFooterText = styled.div`
   padding: 0 20px;
 `;
 
-const ConnectWithMeText = styled.div`
-  display: flex;
+const ConnectWithMeText = styled(Flex)`
   align-items: center;
   font-size: 21px;
   font-weight: 300;
@@ -63,10 +63,6 @@ const ConnectWithMeText = styled.div`
   letter-spacing: 0em;
   margin-top: 32px;
   padding: 0 20px;
-`;
-
-const Spacer = styled.div`
-  width: 8px;
 `;
 
 const SignatureContainer = styled.div`
@@ -89,7 +85,7 @@ const About = ({ data }: AboutProps) => {
       </IntroductionText>
       <OuterContainer>
         <Flex
-          flexDirection={["column-reverse", "column", "row"]}
+          flexDirection={["column-reverse", "column-reverse", "row"]}
           width={["100%", "100%", "60%"]}
           px="20px"
         >
@@ -116,10 +112,10 @@ const About = ({ data }: AboutProps) => {
                 Social Media Marketing
               </b>{" "}
               Professional course on Coursera and a fews months ago I started
-              and finished the
-              <b>Google UX Design</b> course to acquire the foundamentals to
-              enter the UX world. I'm now ready to start a new one, to deep dive
-              into the UX and put in practice what I’ve learned.
+              and finished the <b>Google UX Design</b> course to acquire the
+              foundamentals to enter the UX world. I'm now ready to start a new
+              one, to deep dive into the UX and put in practice what I’ve
+              learned.
             </Body>
             <Title>Why me?</Title>
             <Body>
@@ -135,12 +131,20 @@ const About = ({ data }: AboutProps) => {
             width={["100%", "100%", "30%"]}
             mb={["40px", "40px", "0px"]}
           >
-            <Box>
+            <Box display={["none", "none", "block"]} mt="50px">
               <StaticImage
                 aspectRatio={9 / 16}
                 alt="me"
-                src="../images/cristina.jpg"
-                height={600}
+                src="../images/cristina.png"
+                placeholder="none"
+              />
+            </Box>
+            <Box display={["block", "block", "none"]}>
+              <StaticImage
+                aspectRatio={1 / 1}
+                alt="me"
+                src="../images/cristina.png"
+                placeholder="none"
               />
             </Box>
           </Flex>
@@ -150,24 +154,33 @@ const About = ({ data }: AboutProps) => {
         Want to talk about what I could bring to you or why am I the right fit
         for you? Don’t be shy, let’s connect!
       </BoldFooterText>
-      <ConnectWithMeText>
-        Connect with me on <Spacer />
-        <SocialIcon
-          href="https://www.linkedin.com/in/cristinagatti99/"
-          imageUrl={data.linkedin.publicURL}
-        />
-        <Spacer />
-        or shoot me an <Spacer />
-        <SocialIcon
-          href="https://www.behance.net/cristinagatti1"
-          imageUrl={data.behance.publicURL}
-        />
+      <ConnectWithMeText
+        mt="40px"
+        flexWrap="wrap"
+        justifyContent="center"
+        textAlign="center"
+      >
+        <Text mr="8px">Connect with me on</Text>
+        <Box mr="8px">
+          <SocialIcon
+            href="https://www.linkedin.com/in/cristinagatti99/"
+            imageUrl={data.linkedin.publicURL}
+          />
+        </Box>
+        <Text mr="8px">or shoot me an </Text>
+        <Box mr="8px">
+          <SocialIcon
+            href="https://www.behance.net/cristinagatti1"
+            imageUrl={data.behance.publicURL}
+          />
+        </Box>
       </ConnectWithMeText>
       <SignatureContainer>
         <StaticImage
           alt="signature"
           src="../images/signature.png"
           width={235}
+          placeholder="none"
         />
       </SignatureContainer>
     </Layout>
