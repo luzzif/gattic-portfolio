@@ -5,12 +5,7 @@ import styled from "styled-components";
 import { SocialIcon } from "../components/social-icon";
 import { Work } from "../components/work";
 import { StaticImage } from "gatsby-plugin-image";
-import { Box, Flex, Text } from "rebass";
-
-const HeaderImage = styled.img`
-  margin-bottom: 140px;
-  width: 100%;
-`;
+import { Box, Flex, Image, Text } from "rebass";
 
 const SummaryText = styled(Text)`
   max-width: 540px;
@@ -36,10 +31,26 @@ const Index = ({ data }: IndexProps) => {
       linkedinSvgUrl={data.linkedin.publicURL}
       emailSvgUrl={data.email.publicURL}
     >
-      <HeaderImage src={data.header.publicURL} />
+      <Box width="100%" mt="40px" mb={["60px", "60px", "100px"]}>
+        <Image
+          width="100%"
+          display={["block", "none"]}
+          src={data.headerMobile.publicURL}
+        />
+        <Image
+          width="100%"
+          display={["none", "block", "none"]}
+          src={data.headerTablet.publicURL}
+        />
+        <Image
+          width="100%"
+          display={["none", "none", "block"]}
+          src={data.headerDesktop.publicURL}
+        />
+      </Box>
       <Flex
         flexDirection={["column", "column", "row"]}
-        marginBottom="90px"
+        marginBottom={["60px", "60px", "90px"]}
         marginLeft={["0px", "0px", "81px"]}
         maxWidth="656px"
         justifyContent="space-between"
@@ -105,7 +116,13 @@ const Index = ({ data }: IndexProps) => {
 
 export const query = graphql`
   query {
-    header: file(relativePath: { eq: "header.svg" }) {
+    headerDesktop: file(relativePath: { eq: "header/desktop.svg" }) {
+      publicURL
+    }
+    headerTablet: file(relativePath: { eq: "header/tablet.svg" }) {
+      publicURL
+    }
+    headerMobile: file(relativePath: { eq: "header/mobile.svg" }) {
       publicURL
     }
     linkedin: file(relativePath: { eq: "linkedin.svg" }) {
