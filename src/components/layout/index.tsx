@@ -57,13 +57,13 @@ const FooterEmail = styled.a`
 interface LayoutProps {
   children: ReactNode;
   linkedinSvgUrl: string;
-  emailSvgUrl: string;
+  behanceSvgUrl: string;
 }
 
 export const Layout = ({
   children,
   linkedinSvgUrl,
-  emailSvgUrl,
+  behanceSvgUrl,
 }: LayoutProps) => {
   return (
     <>
@@ -97,16 +97,16 @@ export const Layout = ({
               gatticristina99@gmail.com
             </FooterEmail>
           </Box>
-          <Flex flexDirection={["row", "row", "column"]}>
-            <Box mr={["18px", "18px", "0px"]} mb={["0px", "0px", "18px"]}>
+          <Flex flexDirection={["column", "column", "row"]}>
+            <Box mr={["0px", "0px", "18px"]} mb={["18px", "18px", "0px"]}>
               <SocialIcon
                 href="https://www.linkedin.com/in/cristinagatti99/"
                 imageUrl={linkedinSvgUrl}
               />
             </Box>
             <SocialIcon
-              href="mailto:gatticristina99@gmail"
-              imageUrl={emailSvgUrl}
+              href="https://www.behance.net/cristinagatti1"
+              imageUrl={behanceSvgUrl}
             />
           </Flex>
         </Footer>

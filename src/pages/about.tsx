@@ -81,7 +81,7 @@ const About = ({ data }: AboutProps) => {
   return (
     <Layout
       linkedinSvgUrl={data.linkedin.publicURL}
-      emailSvgUrl={data.email.publicURL}
+      behanceSvgUrl={data.behance.publicURL}
     >
       <IntroductionText>
         OH HEY,
@@ -159,8 +159,8 @@ const About = ({ data }: AboutProps) => {
         <Spacer />
         or shoot me an <Spacer />
         <SocialIcon
-          href="mailto:gatticristina99@gmail.com"
-          imageUrl={data.email.publicURL}
+          href="https://www.behance.net/cristinagatti1"
+          imageUrl={data.behance.publicURL}
         />
       </ConnectWithMeText>
       <SignatureContainer>
@@ -179,7 +179,7 @@ export const query = graphql`
     linkedin: file(relativePath: { eq: "linkedin.svg" }) {
       publicURL
     }
-    email: file(relativePath: { eq: "email.svg" }) {
+    behance: file(relativePath: { eq: "behance.svg" }) {
       publicURL
     }
   }

@@ -20,7 +20,7 @@ const Index = ({ data }: JoboProps) => {
   return (
     <Layout
       linkedinSvgUrl={data.linkedin.publicURL}
-      emailSvgUrl={data.email.publicURL}
+      behanceSvgUrl={data.behance.publicURL}
     >
       <Flex
         justifyContent="center"
@@ -188,7 +188,7 @@ export const query = graphql`
     linkedin: file(relativePath: { eq: "linkedin.svg" }) {
       publicURL
     }
-    email: file(relativePath: { eq: "email.svg" }) {
+    behance: file(relativePath: { eq: "behance.svg" }) {
       publicURL
     }
     personas: file(relativePath: { eq: "jobo/personas.png" }) {

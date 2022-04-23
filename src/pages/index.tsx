@@ -29,7 +29,7 @@ const Index = ({ data }: IndexProps) => {
   return (
     <Layout
       linkedinSvgUrl={data.linkedin.publicURL}
-      emailSvgUrl={data.email.publicURL}
+      behanceSvgUrl={data.behance.publicURL}
     >
       <Box width="100%" mt="40px" mb={["60px", "60px", "100px"]}>
         <Image
@@ -69,8 +69,8 @@ const Index = ({ data }: IndexProps) => {
             />
           </Box>
           <SocialIcon
-            href="mailto:gatticristina99@gmail.com"
-            imageUrl={data.email.publicURL}
+            href="https://www.behance.net/cristinagatti1"
+            imageUrl={data.behance.publicURL}
           />
         </Flex>
       </Flex>
@@ -128,7 +128,7 @@ export const query = graphql`
     linkedin: file(relativePath: { eq: "linkedin.svg" }) {
       publicURL
     }
-    email: file(relativePath: { eq: "email.svg" }) {
+    behance: file(relativePath: { eq: "behance.svg" }) {
       publicURL
     }
   }
