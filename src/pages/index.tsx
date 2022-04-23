@@ -39,6 +39,8 @@ const Index = ({ data }: IndexProps) => {
     <Layout
       linkedinSvgUrl={data.linkedin.publicURL}
       behanceSvgUrl={data.behance.publicURL}
+      logoSvgUrl={data.logo.publicURL}
+      hideLogo
     >
       <ImageContainer
         width="100%"
@@ -148,6 +150,9 @@ export const query = graphql`
       publicURL
     }
     behance: file(relativePath: { eq: "behance.svg" }) {
+      publicURL
+    }
+    logo: file(relativePath: { eq: "logo.svg" }) {
       publicURL
     }
   }

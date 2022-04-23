@@ -78,6 +78,7 @@ const About = ({ data }: AboutProps) => {
     <Layout
       linkedinSvgUrl={data.linkedin.publicURL}
       behanceSvgUrl={data.behance.publicURL}
+      logoSvgUrl={data.logo.publicURL}
     >
       <IntroductionText>
         OH HEY,
@@ -193,6 +194,9 @@ export const query = graphql`
       publicURL
     }
     behance: file(relativePath: { eq: "behance.svg" }) {
+      publicURL
+    }
+    logo: file(relativePath: { eq: "logo.svg" }) {
       publicURL
     }
   }

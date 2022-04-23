@@ -2,7 +2,8 @@ import React, { ReactNode } from "react";
 import styled, { createGlobalStyle, ThemeProvider } from "styled-components";
 import { Link } from "gatsby";
 import { SocialIcon } from "../social-icon";
-import { Box, Flex } from "rebass";
+import { Box, Flex, Image } from "rebass";
+import { Seo } from "../seo";
 
 const GlobalStyle = createGlobalStyle`
   body,
@@ -18,7 +19,6 @@ const GlobalStyle = createGlobalStyle`
 const Header = styled(Flex)`
   height: 128px;
   margin-bottom: 40px;
-  justify-content: flex-end;
   align-items: center;
   background-color: #fff;
 `;
@@ -58,24 +58,35 @@ interface LayoutProps {
   children: ReactNode;
   linkedinSvgUrl: string;
   behanceSvgUrl: string;
+  logoSvgUrl: string;
+  hideLogo?: boolean;
 }
 
 export const Layout = ({
   children,
   linkedinSvgUrl,
   behanceSvgUrl,
+  logoSvgUrl,
+  hideLogo,
 }: LayoutProps) => {
   return (
     <>
       <GlobalStyle />
+      <Seo />
       <ThemeProvider theme={{ primary: "#EA4AC5" }}>
-        <Header px={["24px", "36px", "75px"]}>
-          <MenuItem
-            activeStyle={{ color: "#EA4AC5", textDecoration: "underline" }}
-            to="/"
-          >
-            work
-          </MenuItem>
+        <Header
+          px={["24px", "36px", "75px"]}
+          justifyContent={hideLogo ? "flex-end" : "space-between"}
+        >
+          {!hideLogo && (
+            <MenuItem
+              activeStyle={{ color: "#EA4AC5", textDecoration: "underline" }}
+              last
+              to="/"
+            >
+              <Image src={logoSvgUrl} height={60} />
+            </MenuItem>
+          )}
           <MenuItem
             activeStyle={{ color: "#EA4AC5", textDecoration: "underline" }}
             last

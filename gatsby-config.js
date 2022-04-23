@@ -1,8 +1,10 @@
 /** @type {import('gatsby').GatsbyConfig} */
 module.exports = {
   siteMetadata: {
-    title: ``,
-    siteUrl: `https://www.yourdomain.tld`,
+    title: `Cristina Gatti`,
+    author: "Gatti Cristina",
+    description: "Description",
+    siteUrl: `https://gattic.xyz`,
   },
   plugins: [
     "gatsby-plugin-image",
@@ -27,6 +29,12 @@ module.exports = {
         path: "./src/pages/",
       },
       __key: "pages",
+    },
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        icon: "src/images/icon.png",
+      },
     },
   ],
 };
