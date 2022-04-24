@@ -120,7 +120,7 @@ const About = ({ data }: AboutProps) => {
             </Body>
             <Title>Why me?</Title>
             <Body>
-              I’ll be short. <br />
+              I'll be short. <br />
               My strengths are <b>empathy</b>, the ability to understand what
               people feels , and <b>team player</b>.
               <br /> I bring creativity, enthusiasm and organizational skills to
@@ -138,6 +138,7 @@ const About = ({ data }: AboutProps) => {
                 alt="me"
                 src="../images/cristina.png"
                 placeholder="none"
+                quality={100}
               />
             </Box>
             <Box display={["block", "block", "none"]}>
@@ -146,6 +147,7 @@ const About = ({ data }: AboutProps) => {
                 alt="me"
                 src="../images/cristina.png"
                 placeholder="none"
+                quality={80}
               />
             </Box>
           </Flex>
@@ -182,6 +184,7 @@ const About = ({ data }: AboutProps) => {
           src="../images/signature.png"
           width={235}
           placeholder="none"
+          quality={100}
         />
       </SignatureContainer>
     </Layout>
