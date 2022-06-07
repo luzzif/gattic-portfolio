@@ -31,6 +31,14 @@ module.exports = {
       __key: "pages",
     },
     {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "fonts",
+        path: "./src/fonts/",
+      },
+      __key: "fonts",
+    },
+    {
       resolve: "gatsby-plugin-manifest",
       options: {
         icon: "src/images/icon.png",

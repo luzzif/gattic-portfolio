@@ -107,7 +107,7 @@ const Index = ({ data }: IndexProps) => {
               alt="jobo"
               src="../images/jobo.png"
               objectFit="contain"
-              placeholder="none"
+              placeholder="tracedSVG"
               height={200}
             />
           }
@@ -115,21 +115,21 @@ const Index = ({ data }: IndexProps) => {
           description="Responsive web design for job search"
           to="/jobo"
         />
-        {/* <Work
+        <Work
           reversed
           image={
             <StaticImage
               alt="the-slice"
               src="../images/lets-cake.png"
               objectFit="contain"
-              placeholder="none"
-              height={140}
+              placeholder="tracedSVG"
+              height={260}
             />
           }
           title="THE SLICE BAKERY"
           description="Web design for ordering cakes online from a local bakery"
-          to="/jobo"
-        /> */}
+          to="/the-slice"
+        />
       </Flex>
     </Layout>
   );

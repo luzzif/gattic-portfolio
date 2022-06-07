@@ -4,6 +4,7 @@ import { Link } from "gatsby";
 import { SocialIcon } from "../social-icon";
 import { Box, Flex, Image } from "rebass";
 import { Seo } from "../seo";
+import "./layout.css";
 
 const GlobalStyle = createGlobalStyle`
   body,
