@@ -82,21 +82,41 @@ const FindingCard = ({ children, number }: FindingCardProps) => {
 export const Refining = () => {
   return (
     <Flex flexDirection="column" alignItems="center" width="100%">
-      <Flex flexDirection="column" alignItems="center" mb="40px" maxWidth="50%">
-        <Flex flexDirection="column" width={["80%"]} mb="40px" mt="34px">
-          <Box alignSelf="flex-start" mb="16px" width="fit-content">
+      <Flex
+        flexDirection="column"
+        alignItems="center"
+        mb="40px"
+        maxWidth={["100%", "50%"]}
+      >
+        <Flex
+          flexDirection="column"
+          width={["80%"]}
+          mb="40px"
+          mt="34px"
+          px={["24px", "0px"]}
+        >
+          <Box
+            alignSelf={["center", "flex-start"]}
+            mb="16px"
+            width="fit-content"
+          >
             <SectionTitle color="#FFF" backgroundColor="#EBD7DE">
               Refining the design &
             </SectionTitle>
           </Box>
-          <Box alignSelf="flex-end" width="fit-content">
+          <Box alignSelf={["center", "flex-end"]} width="fit-content">
             <SectionTitle color="#FFF" backgroundColor="#EBD7DE">
               ACCESSIBILITY CONSIDERATIONS
             </SectionTitle>
           </Box>
         </Flex>
-        <Flex justifyContent="space-between" mb="50px">
-          <Box mr="60px">
+        <Flex
+          flexDirection={["column", "row"]}
+          justifyContent="space-between"
+          mb="50px"
+          px={["24px", "0px"]}
+        >
+          <Box mr={["0px", "60px"]} mb={["24px", "0px"]}>
             <FindingCard number={1}>
               Headings with different sized text for clear visual hierachy{" "}
             </FindingCard>
@@ -119,8 +139,14 @@ export const Refining = () => {
         >
           Next steps
         </Text>
-        <Flex justifyContent="space-between" alignItems="center" width="100%">
-          <Flex alignItems="center" mr="12px">
+        <Flex
+          flexDirection={["column", "row"]}
+          justifyContent="space-between"
+          alignItems="center"
+          width="100%"
+          px={["24px", "0px"]}
+        >
+          <Flex alignItems="center" mb={["13px", "0px"]} mr={["0px", "13px"]}>
             <Box minWidth="auto" mr="13px">
               <CircleWithNumber size={40} number={1} />
             </Box>
@@ -133,7 +159,7 @@ export const Refining = () => {
               Conduct follow-up usability testing on the new website
             </Text>
           </Flex>
-          <Box mr="12px">
+          <Box mb={["13px", "0px"]} mr={["0px", "13px"]}>
             <StaticImage
               alt="arrow-1"
               src="../../../images/lets-cake/arrow.svg"
@@ -142,7 +168,7 @@ export const Refining = () => {
               quality={100}
             />
           </Box>
-          <Flex alignItems="center" mr="12px">
+          <Flex alignItems="center">
             <Box minWidth="auto" mr="13px">
               <CircleWithNumber size={40} number={2} />
             </Box>

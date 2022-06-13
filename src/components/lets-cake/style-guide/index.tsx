@@ -68,14 +68,14 @@ export const StyleGuide = () => {
         pt="33px"
         pb="60px"
       >
-        <Box pb="118px">
+        <Box pb={["60px", "118px"]}>
           <SectionTitle color="#FFF" backgroundColor="#EBD7DE">
             Style guide
           </SectionTitle>
         </Box>
-        <Flex alignItems="center">
-          <Flex alignItems="center" mr="132px">
-            <Box mr="40px">
+        <Flex flexDirection={["column", "row"]} alignItems="center">
+          <Flex alignItems="center" mr={["0px", "132px"]} px={["24px", "0px"]}>
+            <Box>
               <Color color="#D9091F" percentage={10} size={148} />
             </Box>
             <Flex flexDirection="column">
@@ -90,7 +90,7 @@ export const StyleGuide = () => {
               />
             </Flex>
           </Flex>
-          <Flex flexDirection="column">
+          <Flex flexDirection="column" px={["24px", "0px"]}>
             <Text
               fontFamily="Open Sans"
               fontSize="45px"

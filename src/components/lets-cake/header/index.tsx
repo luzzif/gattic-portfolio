@@ -22,11 +22,13 @@ export const Header = () => {
         <Flex
           justifyContent="space-around"
           alignItems="center"
+          flexDirection={["column", "row"]}
           pt="48px"
           pb="81px"
-          width={["60%"]}
+          px={["24px", "0px"]}
+          width={["100%", "60%"]}
         >
-          <Box mr="24px">
+          <Box mr={["0px", "24px"]} mb={["24px", "0px"]}>
             <StaticImage
               alt="header-image"
               src="../../../images/lets-cake/header1.png"
@@ -37,8 +39,8 @@ export const Header = () => {
           <Flex
             flexDirection="column"
             style={{ zIndex: 10 }}
-            maxWidth="424px"
-            alignItems="flex-end"
+            maxWidth={["100%", "424px"]}
+            alignItems={["center", "flex-end"]}
           >
             <Box mb="26px">
               <StaticImage
@@ -53,7 +55,7 @@ export const Header = () => {
               fontWeight="300"
               lineHeight="35px"
               letterSpacing="0em"
-              textAlign="right"
+              textAlign={["center", "right"]}
             >
               Web design for ordering cakes online from a local bakery
             </Text>
@@ -63,10 +65,12 @@ export const Header = () => {
       <SecondFlex width="100%" alignItems="center" flexDirection="column">
         <Flex
           justifyContent="space-around"
+          flexDirection={["column", "row"]}
           alignItems="center"
           pt="50px"
           pb="40px"
-          width={["60%"]}
+          px={["24px", "0px"]}
+          width={["100%", "60%"]}
         >
           <Flex flexDirection="column" style={{ zIndex: 10 }} maxWidth="513px">
             <Text
@@ -84,7 +88,7 @@ export const Header = () => {
               fontWeight="300"
               lineHeight="30px"
               letterSpacing="0em"
-              textAlign="justify"
+              textAlign={["justify", "justify"]}
               mb="16px"
             >
               <i>The Slice Bakery</i> is a local bakery based in Winnipeg. The
@@ -99,6 +103,7 @@ export const Header = () => {
               fontWeight="300"
               lineHeight="19px"
               letterSpacing="0em"
+              textAlign={["center", "left"]}
             >
               This project was conducted for educational purposes.
             </Text>
@@ -114,15 +119,17 @@ export const Header = () => {
         </Flex>
         <Flex
           justifyContent="space-around"
-          alignItems="center"
-          pb="47px"
-          width={["60%"]}
+          flexDirection={["column", "row"]}
+          alignItems={["flex-start", "center"]}
+          px={["24px", "0px"]}
+          width={["100%", "60%"]}
         >
           <Text
             fontSize="20px"
             fontWeight="300"
             lineHeight="23px"
             letterSpacing="0em"
+            mb={["40px"]}
           >
             <strong>Role</strong>: UX/UI designer from conception to delivery
           </Text>
@@ -131,6 +138,7 @@ export const Header = () => {
             fontWeight="300"
             lineHeight="23px"
             letterSpacing="0em"
+            mb={["40px"]}
           >
             <strong>Timeline</strong>: December 2021 - January 2022
           </Text>

@@ -24,20 +24,26 @@ export const EmpathyMaps = () => {
         </Box>
         <Text
           mb="40px"
-          maxWidth="50%"
-          px="16px"
+          maxWidth={["100%", "50%"]}
+          px={["24px", "16px"]}
           fontFamily="Raleway"
           fontSize="21px"
           fontWeight="300"
           lineHeight="30px"
           letterSpacing="0em"
+          textAlign={["justify", "center"]}
         >
           To deeply emphatize with users I created an emphaty map, a
           visualization tool that allows me to understand the behavior and
           attitude of the users. It simply helps me paint a picture of the ideal
           users and understand their needs and desires.
         </Text>
-        <Flex flexDirection="column" mb="56px" width={["50%"]}>
+        <Flex
+          px={["24px", "0px"]}
+          flexDirection="column"
+          mb="56px"
+          width={["100%", "50%"]}
+        >
           <Box alignSelf="flex-end" mb="20px">
             <StaticImage
               alt="empathy-map-1"

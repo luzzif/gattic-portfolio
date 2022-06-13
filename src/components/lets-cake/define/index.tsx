@@ -19,17 +19,18 @@ export const Define = () => {
         width="100%"
         alignItems="center"
         flexDirection="column"
-        pt="50px"
+        pt={["24px", "50px"]}
       >
         <Flex
           flexDirection="column"
           alignItems="center"
-          pt="41px"
+          pt={["0px", "41px"]}
           pb="18px"
-          width={["60%"]}
+          px={["24px", "0px"]}
+          width={["100%", "60%"]}
         >
-          <Flex>
-            <Flex flexDirection="column" mr="40px">
+          <Flex flexDirection={["column", "row"]}>
+            <Flex flexDirection="column" mr={["0px", "40px"]}>
               <Text
                 fontFamily="Bowlby One"
                 fontSize="50px"
@@ -41,13 +42,13 @@ export const Define = () => {
                 Define
               </Text>
               <Text
-                mb="60px"
+                mb={["24px", "60px"]}
                 maxWidth="510px"
                 fontSize="21px"
                 fontWeight="300"
                 lineHeight="30px"
                 letterSpacing="0em"
-                textAlign="left"
+                textAlign={["justify", "left"]}
               >
                 <p>
                   Based on the conversations with the users, I defined the
@@ -67,7 +68,7 @@ export const Define = () => {
                 quality={100}
               />
             </Flex>
-            <Box>
+            <Box mt={["24px", "0px"]}>
               <StaticImage
                 alt="persona-2"
                 src="../../../images/lets-cake/persona-1.png"

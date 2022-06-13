@@ -56,65 +56,88 @@ export const CardSorting = () => {
           fontWeight="300"
           lineHeight="30px"
           letterSpacing="0em"
-          maxWidth="50%"
+          maxWidth={["100%", "50%"]}
           mb="40px"
+          px={["24px", "0px"]}
+          textAlign={["justify", "center"]}
         >
           As the final step in my Ideate phase, I used the card sorting to
           understand how users think about my content. Why did I choose card
           sorting?
         </Text>
-        <Flex justifyContent="space-around" width={["50%"]} mb="108px">
-          <ImageWithText
-            image={
-              <StaticImage
-                alt="sitemap"
-                src="../../../images/lets-cake/click.png"
-                placeholder="blurred"
-                quality={100}
-                width={80}
-              />
-            }
-            text="IT'S SIMPLE"
-          />
-          <ImageWithText
-            image={
-              <StaticImage
-                alt="sitemap"
-                src="../../../images/lets-cake/chronometer.png"
-                placeholder="blurred"
-                quality={100}
-                width={80}
-              />
-            }
-            text="IT'S QUICK"
-          />
-          <ImageWithText
-            image={
-              <StaticImage
-                alt="sitemap"
-                src="../../../images/lets-cake/lightbulb.png"
-                placeholder="blurred"
-                quality={100}
-                width={80}
-              />
-            }
-            text="IT'S INSIGHTFUL"
-          />
-          <ImageWithText
-            image={
-              <StaticImage
-                alt="sitemap"
-                src="../../../images/lets-cake/save-money.png"
-                placeholder="blurred"
-                quality={100}
-                width={80}
-              />
-            }
-            text="IT'S CHEAP"
-          />
+        <Flex
+          justifyContent="space-around"
+          width={["100%", "50%"]}
+          mb="108px"
+          px={["24px", "0px"]}
+          flexDirection={["column", "row"]}
+        >
+          <Flex
+            width={["100%", "auto"]}
+            justifyContent={["space-around", "flex-start"]}
+            mb={["32px", "0px"]}
+          >
+            <ImageWithText
+              image={
+                <StaticImage
+                  alt="sitemap"
+                  src="../../../images/lets-cake/click.png"
+                  placeholder="blurred"
+                  quality={100}
+                  width={80}
+                />
+              }
+              text="IT'S SIMPLE"
+            />
+            <ImageWithText
+              image={
+                <StaticImage
+                  alt="sitemap"
+                  src="../../../images/lets-cake/chronometer.png"
+                  placeholder="blurred"
+                  quality={100}
+                  width={80}
+                />
+              }
+              text="IT'S QUICK"
+            />
+          </Flex>
+          <Flex
+            width={["100%", "auto"]}
+            justifyContent={["space-around", "flex-start"]}
+          >
+            <ImageWithText
+              image={
+                <StaticImage
+                  alt="sitemap"
+                  src="../../../images/lets-cake/lightbulb.png"
+                  placeholder="blurred"
+                  quality={100}
+                  width={80}
+                />
+              }
+              text="IT'S INSIGHTFUL"
+            />
+            <ImageWithText
+              image={
+                <StaticImage
+                  alt="sitemap"
+                  src="../../../images/lets-cake/save-money.png"
+                  placeholder="blurred"
+                  quality={100}
+                  width={80}
+                />
+              }
+              text="IT'S CHEAP"
+            />
+          </Flex>
         </Flex>
-        <Flex>
-          <Box>
+        <Flex
+          px={["24px", "0px"]}
+          flexDirection={["column", "row"]}
+          alignItems={["center", "flex-start"]}
+        >
+          <Box mb={["24px", "0px"]}>
             <StaticImage
               alt="home"
               src="../../../images/lets-cake/home.png"
@@ -123,7 +146,7 @@ export const CardSorting = () => {
               width={220}
             />
           </Box>
-          <Box>
+          <Box mb={["24px", "0px"]}>
             <StaticImage
               alt="shop"
               src="../../../images/lets-cake/shop.png"

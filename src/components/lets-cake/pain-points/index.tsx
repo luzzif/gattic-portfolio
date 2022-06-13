@@ -119,7 +119,9 @@ export const PainPoints = () => {
           alignItems="center"
           pt="41px"
           pb="18px"
-          width={["50%"]}
+          flexDirection={["column", "row"]}
+          width={["100%", "50%"]}
+          display={["none !important", "block"]}
         >
           <NumberWithText
             number={1}
@@ -127,17 +129,18 @@ export const PainPoints = () => {
             description="Don’t have the time to wait on the spot"
           />
           <NumberWithText
-            number={1}
+            number={2}
             title="Experience"
             description="Small buttons and confusing checkout"
           />
           <NumberWithText
-            number={1}
+            number={3}
             title="Interaction"
             description="Not to be able to pay in advance"
           />
         </Flex>
         <Flex
+          display={["none !important", "flex"]}
           justifyContent="space-around"
           alignItems="center"
           pt="20px"
@@ -162,6 +165,7 @@ export const PainPoints = () => {
         </Flex>
       </BackgroundFlex>
       <Flex
+        display={["none !important", "flex"]}
         justifyContent="space-around"
         alignItems="center"
         pt="20px"

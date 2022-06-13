@@ -23,20 +23,22 @@ export const UserFlow = () => {
           </SectionTitle>
         </Box>
         <Text
-          mb="120px"
+          mb={["24px", "120px"]}
           fontFamily="Raleway"
           fontSize="21px"
           fontWeight="300"
           lineHeight="30px"
           letterSpacing="0em"
-          maxWidth="50%"
+          maxWidth={["100%", "50%"]}
+          px={["24px", "0px"]}
+          textAlign={["justify", "center"]}
         >
           I then created the user flow, a visual representation of the path that
           the user is gonna follow to complete a task. It starts with an entry
           point, in this case the homepage of the website, and ends with a final
           action, for this project with a product purchase.
         </Text>
-        <Box>
+        <Box px={["24px", "0px"]}>
           <StaticImage
             alt="sitemap"
             src="../../../images/lets-cake/user-flow.png"

@@ -81,7 +81,12 @@ const FindingCard = ({ children, number }: FindingCardProps) => {
 export const Test = () => {
   return (
     <Flex flexDirection="column" alignItems="center" width="100%" pb="47px">
-      <Flex flexDirection="column" mb="40px" maxWidth="50%">
+      <Flex
+        flexDirection="column"
+        mb="40px"
+        maxWidth={["100%", "50%"]}
+        px={["24px", "0px"]}
+      >
         <Text
           fontFamily="Bowlby One"
           fontSize="50px"
@@ -90,7 +95,7 @@ export const Test = () => {
           letterSpacing="0em"
           color="#E7B1B1"
           mb="15px"
-          mt="54px"
+          mt={["24px", "54px"]}
         >
           Test
         </Text>
@@ -116,7 +121,7 @@ export const Test = () => {
         >
           Parameters
         </Text>
-        <Flex justifyContent="space-between">
+        <Flex justifyContent="space-between" flexDirection={["column", "row"]}>
           <Flex flexDirection="column">
             <Flex alignItems="center" mb="40px">
               <Box mr="28px">
@@ -209,11 +214,16 @@ export const Test = () => {
           lineHeight="29px"
           letterSpacing="0em"
           mb="35px"
-          mt="55px"
+          mt={["32px", "55px"]}
         >
           Tasks
         </Text>
-        <Flex justifyContent="space-between" alignItems="center" width="100%">
+        <Flex
+          flexDirection={["column", "row"]}
+          justifyContent="space-between"
+          alignItems="center"
+          width="100%"
+        >
           <Flex alignItems="center" mr="12px">
             <Box minWidth="auto" mr="13px">
               <CircleWithNumber size={40} number={1} />
@@ -283,13 +293,17 @@ export const Test = () => {
         >
           Findings
         </Text>
-        <Flex justifyContent="space-between">
-          <Box mr="60px">
+        <Flex
+          justifyContent="space-between"
+          alignItems={["center", "flex-start"]}
+          flexDirection={["column", "row"]}
+        >
+          <Box mr={["0px", "60px"]} mb={["60px", "0px"]}>
             <FindingCard number={1}>
               5/5 participants wants a more visible “added to cart” notification
             </FindingCard>
           </Box>
-          <Box mr="60px">
+          <Box mr={["0px", "60px"]} mb={["60px", "0px"]}>
             <FindingCard number={2}>
               3/5 participants wants the option for a schedule pickup{" "}
             </FindingCard>
