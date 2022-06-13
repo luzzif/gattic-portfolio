@@ -85,7 +85,7 @@ export const Layout = ({
               last
               to="/"
             >
-              <Image src={logoSvgUrl} height={60} />
+              home
             </MenuItem>
           )}
           <MenuItem
