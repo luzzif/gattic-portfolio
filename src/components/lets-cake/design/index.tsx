@@ -20,13 +20,17 @@ export const Design = () => {
   return (
     <Flex
       mt="50px"
-      pt={["24px", "67px"]}
+      pt={["36px", "36px", "67px"]}
       width="100%"
       flexDirection="column"
       alignItems="center"
       backgroundColor="#E9D1D9"
     >
-      <Flex width={["100%", "60%"]} flexDirection="column" px={["24px", "0px"]}>
+      <Flex
+        width={["100%", "90%", "60%"]}
+        flexDirection="column"
+        px={["24px", "24px", "0px"]}
+      >
         <Text
           mb="48px"
           fontFamily="Bowlby One"
@@ -39,14 +43,14 @@ export const Design = () => {
           Design
         </Text>
         <Text
-          alignSelf="flex-end"
-          maxWidth={["100%", "80%"]}
+          alignSelf={["flex-start", "flex-start", "flex-end"]}
+          maxWidth={["100%", "100%", "80%"]}
           mb="22px"
           fontSize="21px"
           fontWeight="300"
           lineHeight="30px"
           letterSpacing="0em"
-          textAlign={["justify", "right"]}
+          textAlign={["justify", "justify", "right"]}
         >
           After sketched out paper wireframes for each screen in my app, I moved
           from paper wireframes to the digital wireframes. I decided to design
@@ -54,14 +58,14 @@ export const Design = () => {
           build upon.
         </Text>
         <Text
-          alignSelf="flex-end"
-          maxWidth={["100%", "70%"]}
+          alignSelf={["flex-start", "flex-start", "flex-end"]}
+          maxWidth={["100%", "100%", "70%"]}
           mb="22px"
           fontSize="21px"
           fontWeight="300"
           lineHeight="30px"
           letterSpacing="0em"
-          textAlign={["justify", "right"]}
+          textAlign={["justify", "justify", "right"]}
         >
           For me it’s important to start with the basic structure because{" "}
           <strong>
@@ -70,14 +74,14 @@ export const Design = () => {
           I'm going to design later in the mockups.
         </Text>
         <Text
-          alignSelf="flex-end"
-          maxWidth={["100%", "50%"]}
+          alignSelf={["flex-start", "flex-start", "flex-end"]}
+          maxWidth={["100%", "100%", "50%"]}
           mb="22px"
           fontSize="21px"
           fontWeight="300"
           lineHeight="30px"
           letterSpacing="0em"
-          textAlign={["justify", "right"]}
+          textAlign={["justify", "justify", "right"]}
         >
           I then created a <strong>low-fidelity prototype</strong>, connecting
           all of the screens involved in the primary user flow: adding an item
@@ -88,8 +92,8 @@ export const Design = () => {
         <StaticImage
           alt="mockups"
           src="../../../images/lets-cake/background10.png"
-          quality={100}
-          placeholder="none"
+          quality={80}
+          placeholder="blurred"
           layout="fullWidth"
           objectFit="fill"
         />

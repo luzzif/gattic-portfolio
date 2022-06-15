@@ -86,17 +86,17 @@ export const Refining = () => {
         flexDirection="column"
         alignItems="center"
         mb="40px"
-        maxWidth={["100%", "50%"]}
+        maxWidth={["100%", "100%", "50%"]}
       >
         <Flex
           flexDirection="column"
           width={["80%"]}
           mb="40px"
           mt="34px"
-          px={["24px", "0px"]}
+          px={["24px", "24px", "0px"]}
         >
           <Box
-            alignSelf={["center", "flex-start"]}
+            alignSelf={["center", "center", "flex-start"]}
             mb="16px"
             width="fit-content"
           >
@@ -104,19 +104,19 @@ export const Refining = () => {
               Refining the design &
             </SectionTitle>
           </Box>
-          <Box alignSelf={["center", "flex-end"]} width="fit-content">
+          <Box alignSelf={["center", "center", "flex-end"]} width="fit-content">
             <SectionTitle color="#FFF" backgroundColor="#EBD7DE">
               ACCESSIBILITY CONSIDERATIONS
             </SectionTitle>
           </Box>
         </Flex>
         <Flex
-          flexDirection={["column", "row"]}
+          flexDirection={["column", "column", "row"]}
           justifyContent="space-between"
           mb="50px"
-          px={["24px", "0px"]}
+          px={["24px", "24px", "0px"]}
         >
-          <Box mr={["0px", "60px"]} mb={["24px", "0px"]}>
+          <Box mr={["0px", "0px", "60px"]} mb={["24px", "24px", "0px"]}>
             <FindingCard number={1}>
               Headings with different sized text for clear visual hierachy{" "}
             </FindingCard>
@@ -140,13 +140,17 @@ export const Refining = () => {
           Next steps
         </Text>
         <Flex
-          flexDirection={["column", "row"]}
+          flexDirection={["column", "column", "row"]}
           justifyContent="space-between"
           alignItems="center"
           width="100%"
-          px={["24px", "0px"]}
+          px={["24px", "24px", "0px"]}
         >
-          <Flex alignItems="center" mb={["13px", "0px"]} mr={["0px", "13px"]}>
+          <Flex
+            alignItems="center"
+            mb={["13px", "13px", "0px"]}
+            mr={["0px", "0px", "13px"]}
+          >
             <Box minWidth="auto" mr="13px">
               <CircleWithNumber size={40} number={1} />
             </Box>
@@ -159,13 +163,27 @@ export const Refining = () => {
               Conduct follow-up usability testing on the new website
             </Text>
           </Flex>
-          <Box mb={["13px", "0px"]} mr={["0px", "13px"]}>
+          <Box display={["block", "block", "none"]} my="32px">
+            <StaticImage
+              alt="arrow-2"
+              src="../../../images/lets-cake/arrow.svg"
+              placeholder="blurred"
+              width={60}
+              quality={80}
+              style={{ transform: "rotate(90deg)" }}
+            />
+          </Box>
+          <Box
+            display={["none", "none", "block"]}
+            mb={["13px", "13px", "0px"]}
+            mr={["0px", "0px", "13px"]}
+          >
             <StaticImage
               alt="arrow-1"
               src="../../../images/lets-cake/arrow.svg"
               placeholder="blurred"
               width={60}
-              quality={100}
+              quality={80}
             />
           </Box>
           <Flex alignItems="center">

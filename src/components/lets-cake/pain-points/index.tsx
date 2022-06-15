@@ -10,7 +10,7 @@ const BackgroundFlex = styled(Flex)`
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
-  background-position: center 60%;
+  background-position: center 340%;
 `;
 
 const CircleBox = styled(Box)`
@@ -107,111 +107,125 @@ export const PainPoints = () => {
           alignItems="center"
           width="100%"
           backgroundColor="#F5DDDE"
-          pt="53px"
-          pb="48px"
+          pt="41px"
+          pb="41px"
         >
           <SectionTitle color="#E9D1D9" backgroundColor="#FCFCFC">
             Pain points
           </SectionTitle>
         </Flex>
+        <Text
+          fontFamily="Raleway"
+          fontSize="21px"
+          fontWeight="300"
+          lineHeight="30px"
+          letterSpacing="0em"
+          px={["24px", "24px", "0px"]}
+          textAlign={["justify", "justify", "left"]}
+        >
+          The Slice Bakery website will improve the overall customer experience,
+          turning pain points into strengths.
+        </Text>
         <Flex
-          justifyContent="space-around"
+          justifyContent="space-between"
           alignItems="center"
           pt="41px"
           pb="18px"
-          flexDirection={["column", "row"]}
-          width={["100%", "50%"]}
-          display={["none !important", "block"]}
+          flexDirection={["column", "column", "row"]}
+          width={["100%", "90%", "50%"]}
         >
-          <NumberWithText
-            number={1}
-            title="Lifestyle"
-            description="Don’t have the time to wait on the spot"
-          />
-          <NumberWithText
-            number={2}
-            title="Experience"
-            description="Small buttons and confusing checkout"
-          />
-          <NumberWithText
-            number={3}
-            title="Interaction"
-            description="Not to be able to pay in advance"
-          />
-        </Flex>
-        <Flex
-          display={["none !important", "flex"]}
-          justifyContent="space-around"
-          alignItems="center"
-          pt="20px"
-          pb="40px"
-          width={["50%"]}
-        >
-          <StaticImage
-            height={168.55}
-            src="../../../images/lets-cake/arrow.png"
-            alt="arrow"
-          />
-          <StaticImage
-            height={168.55}
-            src="../../../images/lets-cake/arrow.png"
-            alt="arrow"
-          />
-          <StaticImage
-            height={168.55}
-            src="../../../images/lets-cake/arrow.png"
-            alt="arrow"
-          />
+          <Flex flexDirection="column" alignItems="center" pt="20px" pb="40px">
+            <Box>
+              <NumberWithText
+                number={1}
+                title="Lifestyle"
+                description="Don’t have the time to wait on the spot"
+              />
+            </Box>
+            <Box>
+              <StaticImage
+                height={168.55}
+                src="../../../images/lets-cake/arrow.png"
+                alt="arrow"
+              />
+            </Box>
+            <Box>
+              <ImageWithText
+                image={
+                  <StaticImage
+                    height={252.06}
+                    placeholder="blurred"
+                    quality={80}
+                    alt="1"
+                    src="../../../images/lets-cake/pain-points-1.png"
+                  />
+                }
+                text='Save time and go directly to "Mobile Order Pick Up"'
+              />
+            </Box>
+          </Flex>
+          <Flex flexDirection="column" alignItems="center" pt="20px" pb="40px">
+            <Box>
+              <NumberWithText
+                number={2}
+                title="Experience"
+                description="Small buttons and confusing checkout"
+              />
+            </Box>
+            <Box>
+              <StaticImage
+                height={168.55}
+                src="../../../images/lets-cake/arrow.png"
+                alt="arrow"
+              />
+            </Box>
+            <Box>
+              <ImageWithText
+                image={
+                  <StaticImage
+                    height={252.06}
+                    placeholder="blurred"
+                    quality={80}
+                    alt="2"
+                    src="../../../images/lets-cake/pain-points-2.png"
+                  />
+                }
+                text="Smooth online purchase and clean design"
+              />
+            </Box>
+          </Flex>
+          <Flex flexDirection="column" alignItems="center" pt="20px" pb="40px">
+            <Box>
+              <NumberWithText
+                number={3}
+                title="Interaction"
+                description="Not to be able to pay in advance"
+              />
+            </Box>
+            <Box>
+              <StaticImage
+                height={168.55}
+                src="../../../images/lets-cake/arrow.png"
+                alt="arrow"
+              />
+            </Box>
+            <Box>
+              <ImageWithText
+                image={
+                  <StaticImage
+                    height={252.06}
+                    placeholder="blurred"
+                    quality={80}
+                    alt="3"
+                    src="../../../images/lets-cake/pain-points-3.png"
+                  />
+                }
+                text="Pay in advance during the checkout process"
+              />
+            </Box>
+          </Flex>
         </Flex>
       </BackgroundFlex>
-      <Flex
-        display={["none !important", "flex"]}
-        justifyContent="space-around"
-        alignItems="center"
-        pt="20px"
-        pb="40px"
-        width={["50%"]}
-      >
-        <ImageWithText
-          image={
-            <StaticImage
-              width={173.95}
-              height={252.06}
-              placeholder="none"
-              quality={100}
-              alt="1"
-              src="../../../images/lets-cake/pain-points-1.png"
-            />
-          }
-          text='Save time and go directly to "Mobile Order Pick Up"'
-        />
-        <ImageWithText
-          image={
-            <StaticImage
-              width={173.95}
-              height={252.06}
-              placeholder="none"
-              quality={100}
-              alt="2"
-              src="../../../images/lets-cake/pain-points-2.png"
-            />
-          }
-          text="Smooth online purchase and clean design"
-        />
-        <ImageWithText
-          image={
-            <StaticImage
-              width={173.95}
-              height={252.06}
-              placeholder="none"
-              quality={100}
-              alt="3"
-              src="../../../images/lets-cake/pain-points-3.png"
-            />
-          }
-          text="Pay in advance during the checkout process"
-        />
-      </Flex>
     </Flex>
   );
 };

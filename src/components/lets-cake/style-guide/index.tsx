@@ -68,13 +68,18 @@ export const StyleGuide = () => {
         pt="33px"
         pb="60px"
       >
-        <Box pb={["60px", "118px"]}>
+        <Box pb={["60px", "60px", "118px"]}>
           <SectionTitle color="#FFF" backgroundColor="#EBD7DE">
             Style guide
           </SectionTitle>
         </Box>
-        <Flex flexDirection={["column", "row"]} alignItems="center">
-          <Flex alignItems="center" mr={["0px", "132px"]} px={["24px", "0px"]}>
+        <Flex flexDirection={["column", "column", "row"]} alignItems="center">
+          <Flex
+            alignItems="center"
+            mr={["0px", "0px", "132px"]}
+            mb={["24px", "24px", "0px"]}
+            px={["24px", "24px", "0px"]}
+          >
             <Box>
               <Color color="#D9091F" percentage={10} size={148} />
             </Box>
@@ -90,7 +95,7 @@ export const StyleGuide = () => {
               />
             </Flex>
           </Flex>
-          <Flex flexDirection="column" px={["24px", "0px"]}>
+          <Flex flexDirection="column" px={["24px", "24px", "0px"]}>
             <Text
               fontFamily="Open Sans"
               fontSize="45px"
@@ -150,7 +155,7 @@ export const StyleGuide = () => {
                   mb="20px"
                   mr="40px"
                 >
-                  A b c d e f g h i l m n
+                  A b c
                 </Text>
                 <Text
                   fontFamily="Open Sans"
@@ -162,7 +167,7 @@ export const StyleGuide = () => {
                   mb="20px"
                   mr="40px"
                 >
-                  A b c d e f g h i l m n
+                  A b c
                 </Text>
                 <Text
                   fontFamily="Open Sans"
@@ -173,7 +178,7 @@ export const StyleGuide = () => {
                   textAlign="left"
                   mr="40px"
                 >
-                  A b c d e f g h i l m n
+                  A b c
                 </Text>
               </Flex>
               <Flex flexDirection="column" mb="97px">
@@ -186,7 +191,7 @@ export const StyleGuide = () => {
                   textAlign="left"
                   mb="20px"
                 >
-                  1234 !?&${" "}
+                  1234 !?&
                 </Text>
                 <Text
                   fontFamily="Open Sans"
@@ -197,7 +202,7 @@ export const StyleGuide = () => {
                   textAlign="left"
                   mb="20px"
                 >
-                  1234 !?&${" "}
+                  1234 !?&
                 </Text>
                 <Text
                   fontFamily="Open Sans"
@@ -207,7 +212,7 @@ export const StyleGuide = () => {
                   letterSpacing="0em"
                   textAlign="left"
                 >
-                  1234 !?&${" "}
+                  1234 !?&
                 </Text>
               </Flex>
             </Flex>
@@ -246,7 +251,7 @@ export const StyleGuide = () => {
                   mb="20px"
                   mr="40px"
                 >
-                  A b c d e f g h i l m n
+                  A b c
                 </Text>
               </Flex>
               <Flex flexDirection="column">
@@ -258,7 +263,7 @@ export const StyleGuide = () => {
                   letterSpacing="0em"
                   mb="20px"
                 >
-                  1234 !?&${" "}
+                  1234 !?&
                 </Text>
               </Flex>
             </Flex>

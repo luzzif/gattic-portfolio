@@ -20,34 +20,34 @@ export const Header = () => {
     <>
       <FirstFlex width="100%" justifyContent="center">
         <Flex
-          justifyContent="space-around"
+          justifyContent="space-between"
           alignItems="center"
-          flexDirection={["column", "row"]}
+          flexDirection={["column", "column", "row"]}
           pt="48px"
           pb="81px"
           px={["24px", "0px"]}
           width={["100%", "60%"]}
         >
-          <Box mr={["0px", "24px"]} mb={["24px", "0px"]}>
+          <Box mr={["0px", "0px", "24px"]} mb={["24px", "24px", "0px"]}>
             <StaticImage
               alt="header-image"
               src="../../../images/lets-cake/header1.png"
-              placeholder="none"
-              quality={100}
+              placeholder="blurred"
+              quality={80}
             />
           </Box>
           <Flex
             flexDirection="column"
             style={{ zIndex: 10 }}
-            maxWidth={["100%", "424px"]}
-            alignItems={["center", "flex-end"]}
+            maxWidth={["100%", "90%", "424px"]}
+            alignItems={["center", "center", "flex-end"]}
           >
             <Box mb="26px">
               <StaticImage
                 alt="header-logo"
                 src="../../../images/lets-cake/logo.png"
-                placeholder="none"
-                quality={100}
+                placeholder="blurred"
+                quality={80}
               />
             </Box>
             <Text
@@ -55,7 +55,7 @@ export const Header = () => {
               fontWeight="300"
               lineHeight="35px"
               letterSpacing="0em"
-              textAlign={["center", "right"]}
+              textAlign={["center", "center", "right"]}
             >
               Web design for ordering cakes online from a local bakery
             </Text>
@@ -64,13 +64,13 @@ export const Header = () => {
       </FirstFlex>
       <SecondFlex width="100%" alignItems="center" flexDirection="column">
         <Flex
-          justifyContent="space-around"
-          flexDirection={["column", "row"]}
+          justifyContent="space-between"
+          flexDirection={["column", "column", "row"]}
           alignItems="center"
           pt="50px"
           pb="40px"
-          px={["24px", "0px"]}
-          width={["100%", "60%"]}
+          px={["24px", "24px", "0px"]}
+          width={["100%", "90%", "60%"]}
         >
           <Flex flexDirection="column" style={{ zIndex: 10 }} maxWidth="513px">
             <Text
@@ -103,7 +103,7 @@ export const Header = () => {
               fontWeight="300"
               lineHeight="19px"
               letterSpacing="0em"
-              textAlign={["center", "left"]}
+              textAlign={["center", "center", "left"]}
             >
               This project was conducted for educational purposes.
             </Text>
@@ -112,17 +112,17 @@ export const Header = () => {
             <StaticImage
               alt="header-image"
               src="../../../images/lets-cake/header2.png"
-              placeholder="none"
-              quality={100}
+              placeholder="blurred"
+              quality={80}
             />
           </Box>
         </Flex>
         <Flex
-          justifyContent="space-around"
-          flexDirection={["column", "row"]}
-          alignItems={["flex-start", "center"]}
-          px={["24px", "0px"]}
-          width={["100%", "60%"]}
+          justifyContent="space-between"
+          flexDirection={["column", "column", "row"]}
+          alignItems={["flex-start", "center", "center"]}
+          px={["24px", "24px", "0px"]}
+          width={["100%", "90%", "60%"]}
         >
           <Text
             fontSize="20px"

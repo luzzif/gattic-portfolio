@@ -19,13 +19,13 @@ export const Ideate = () => {
         width="100%"
         alignItems="center"
         flexDirection="column"
-        pt={["0px", "22px"]}
+        pt={["0px", "0px", "22px"]}
+        px={["24px", "24px", "0px"]}
       >
         <Flex
           flexDirection="column"
           mb="40px"
-          maxWidth={["100%", "50%"]}
-          px={["24px", "0px"]}
+          maxWidth={["100%", "90%", "50%"]}
         >
           <Text
             fontFamily="Bowlby One"
@@ -45,7 +45,7 @@ export const Ideate = () => {
             fontWeight="300"
             lineHeight="30px"
             letterSpacing="0em"
-            textAlign={["justify", "center"]}
+            textAlign={["justify", "justify", "left"]}
           >
             After found out who my targert audience is, I created a sitemap of
             the website. Knowing the bad experience with other bakeries website
@@ -55,12 +55,12 @@ export const Ideate = () => {
             and easy.
           </Text>
         </Flex>
-        <Box mb="20px" px={["24px", "0px"]}>
+        <Box mb="20px" px={["24px", "24px", "0px"]}>
           <StaticImage
             alt="sitemap"
             src="../../../images/lets-cake/sitemap.png"
             placeholder="blurred"
-            quality={100}
+            quality={80}
           />
         </Box>
       </BackgroundFlex>

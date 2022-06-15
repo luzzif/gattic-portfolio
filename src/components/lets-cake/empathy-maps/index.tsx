@@ -24,14 +24,14 @@ export const EmpathyMaps = () => {
         </Box>
         <Text
           mb="40px"
-          maxWidth={["100%", "50%"]}
-          px={["24px", "16px"]}
+          maxWidth={["100%", "100%", "50%"]}
+          px={["24px", "24px", "16px"]}
           fontFamily="Raleway"
           fontSize="21px"
           fontWeight="300"
           lineHeight="30px"
           letterSpacing="0em"
-          textAlign={["justify", "center"]}
+          textAlign={["justify", "justify", "center"]}
         >
           To deeply emphatize with users I created an emphaty map, a
           visualization tool that allows me to understand the behavior and
@@ -39,17 +39,17 @@ export const EmpathyMaps = () => {
           users and understand their needs and desires.
         </Text>
         <Flex
-          px={["24px", "0px"]}
+          px={["24px", "24px", "0px"]}
           flexDirection="column"
           mb="56px"
-          width={["100%", "50%"]}
+          width={["100%", "100%", "50%"]}
         >
           <Box alignSelf="flex-end" mb="20px">
             <StaticImage
               alt="empathy-map-1"
               src="../../../images/lets-cake/empathy-map-1.png"
               placeholder="blurred"
-              quality={100}
+              quality={80}
             />
           </Box>
           <Box>
@@ -57,7 +57,7 @@ export const EmpathyMaps = () => {
               alt="empathy-map-2"
               src="../../../images/lets-cake/empathy-map-2.png"
               placeholder="blurred"
-              quality={100}
+              quality={80}
             />
           </Box>
         </Flex>

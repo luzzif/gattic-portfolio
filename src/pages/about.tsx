@@ -137,8 +137,8 @@ const About = ({ data }: AboutProps) => {
                 aspectRatio={9 / 16}
                 alt="me"
                 src="../images/cristina.png"
-                placeholder="none"
-                quality={100}
+                placeholder="blurred"
+                quality={80}
               />
             </Box>
             <Box display={["block", "block", "none"]}>
@@ -146,7 +146,7 @@ const About = ({ data }: AboutProps) => {
                 aspectRatio={1 / 1}
                 alt="me"
                 src="../images/cristina.png"
-                placeholder="none"
+                placeholder="blurred"
                 quality={80}
               />
             </Box>
@@ -183,8 +183,8 @@ const About = ({ data }: AboutProps) => {
           alt="signature"
           src="../images/signature.png"
           width={235}
-          placeholder="none"
-          quality={100}
+          placeholder="blurred"
+          quality={80}
         />
       </SignatureContainer>
     </Layout>

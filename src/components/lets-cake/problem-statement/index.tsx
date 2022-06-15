@@ -36,8 +36,8 @@ export const ProblemStatement = () => {
         width="100%"
         backgroundColor="#e9d1d9"
         pt="53px"
-        pb={["36px", "48px"]}
-        px={["24px", "0px"]}
+        pb={["36px", "36px", "48px"]}
+        px={["24px", "24px", "0px"]}
       >
         <SectionTitle color="#E9D1D9" backgroundColor="#FCFCFC">
           Problem statement
@@ -53,11 +53,11 @@ export const ProblemStatement = () => {
         <Flex
           justifyContent="space-around"
           alignItems="center"
-          pt={["0px", "20px"]}
+          pt={["0px", "0px", "20px"]}
           pb="40px"
         >
           <Text
-            width={["100%", "50%"]}
+            width={["100%", "90%", "50%"]}
             fontSize="25px"
             fontWeight="700"
             lineHeight="30px"
@@ -66,7 +66,7 @@ export const ProblemStatement = () => {
             alignSelf="center"
             color="#FCFCFC"
             style={{ textTransform: "uppercase" }}
-            px={["24px", "0px"]}
+            px={["24px", "24px", "0px"]}
           >
             Most local bakeries IN WINNIPEG don't have an online booking process
             and the few places that have this option don't accept online
@@ -78,9 +78,10 @@ export const ProblemStatement = () => {
       </ThirdFlex>
       <Flex flexDirection="column" alignItems="center" mb="62px">
         <Flex
-          width={["100%", "50%"]}
-          px={["24px", "0px"]}
+          width={["100%", "90%", "50%"]}
+          px={["24px", "24px", "0px"]}
           flexDirection="column"
+          alignItems={["center", "center", "flex-start"]}
         >
           <Text
             fontFamily="Bowlby One"
@@ -88,7 +89,7 @@ export const ProblemStatement = () => {
             fontWeight="400"
             lineHeight="78px"
             letterSpacing="0em"
-            textAlign={["center", "left"]}
+            textAlign={["center", "center", "left"]}
             mb="15px"
             mt="108px"
             color="#E9D1D9"
@@ -100,9 +101,9 @@ export const ProblemStatement = () => {
             fontWeight="300"
             lineHeight="30px"
             letterSpacing="0em"
-            textAlign={["justify", "left"]}
-            width={["100%", "60%"]}
-            mb={["24px", "0px"]}
+            textAlign={["justify", "justify", "left"]}
+            width={["100%", "90%", "60%"]}
+            mb={["24px", "24px", "0px"]}
           >
             <p>
               I conducted user interviews, which I then turned into empathy maps
@@ -118,9 +119,9 @@ export const ProblemStatement = () => {
           </Text>
           <Flex
             width="100%"
-            alignItems={["center", "flex-end"]}
-            flexDirection={["column", "row"]}
-            mt={["0px", "-200px"]}
+            alignItems={["center", "center", "flex-end"]}
+            flexDirection={["column", "column", "row"]}
+            mt={["0px", "0px", "-200px"]}
             justifyContent="space-around"
           >
             <Flex flexDirection="column" alignItems="center">
@@ -161,9 +162,9 @@ export const ProblemStatement = () => {
                 <StaticImage
                   src="../../../images/lets-cake/chart.png"
                   objectFit="contain"
-                  placeholder="none"
+                  placeholder="blurred"
                   alt="chart"
-                  quality={100}
+                  quality={80}
                 />
               </Box>
               <Text

@@ -20,8 +20,8 @@ export const HiFiWireframes = () => {
         <StaticImage
           alt="mockups"
           src="../../../images/lets-cake/background12.png"
-          quality={100}
-          placeholder="none"
+          quality={80}
+          placeholder="blurred"
           layout="fullWidth"
           objectFit="fill"
         />

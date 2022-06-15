@@ -84,8 +84,8 @@ export const Test = () => {
       <Flex
         flexDirection="column"
         mb="40px"
-        maxWidth={["100%", "50%"]}
-        px={["24px", "0px"]}
+        maxWidth={["100%", "90%", "50%"]}
+        px={["24px", "24px", "0px"]}
       >
         <Text
           fontFamily="Bowlby One"
@@ -95,7 +95,7 @@ export const Test = () => {
           letterSpacing="0em"
           color="#E7B1B1"
           mb="15px"
-          mt={["24px", "54px"]}
+          mt={["24px", "24px", "54px"]}
         >
           Test
         </Text>
@@ -121,7 +121,10 @@ export const Test = () => {
         >
           Parameters
         </Text>
-        <Flex justifyContent="space-between" flexDirection={["column", "row"]}>
+        <Flex
+          justifyContent="space-between"
+          flexDirection={["column", "column", "row"]}
+        >
           <Flex flexDirection="column">
             <Flex alignItems="center" mb="40px">
               <Box mr="28px">
@@ -130,7 +133,7 @@ export const Test = () => {
                   src="../../../images/lets-cake/calendar.svg"
                   placeholder="blurred"
                   width={30}
-                  quality={100}
+                  quality={80}
                 />
               </Box>
               <Text
@@ -150,7 +153,7 @@ export const Test = () => {
                   src="../../../images/lets-cake/spot.svg"
                   placeholder="blurred"
                   width={30}
-                  quality={100}
+                  quality={80}
                 />
               </Box>
               <Text
@@ -172,7 +175,7 @@ export const Test = () => {
                   src="../../../images/lets-cake/people.svg"
                   placeholder="blurred"
                   width={30}
-                  quality={100}
+                  quality={80}
                 />
               </Box>
               <Text
@@ -192,7 +195,7 @@ export const Test = () => {
                   src="../../../images/lets-cake/clock.svg"
                   placeholder="blurred"
                   width={30}
-                  quality={100}
+                  quality={80}
                 />
               </Box>
               <Text
@@ -214,12 +217,12 @@ export const Test = () => {
           lineHeight="29px"
           letterSpacing="0em"
           mb="35px"
-          mt={["32px", "55px"]}
+          mt={["32px", "32px", "55px"]}
         >
           Tasks
         </Text>
         <Flex
-          flexDirection={["column", "row"]}
+          flexDirection={["column", "column", "row"]}
           justifyContent="space-between"
           alignItems="center"
           width="100%"
@@ -237,13 +240,23 @@ export const Test = () => {
               Go to "Cakes Category" and click on "Cheesecakes"
             </Text>
           </Flex>
-          <Box mr="12px">
+          <Box display={["block", "block", "none"]} my="32px">
             <StaticImage
               alt="arrow-1"
               src="../../../images/lets-cake/arrow.svg"
               placeholder="blurred"
               width={60}
-              quality={100}
+              quality={80}
+              style={{ transform: "rotate(90deg)" }}
+            />
+          </Box>
+          <Box display={["none", "none", "block"]} mr="12px">
+            <StaticImage
+              alt="arrow-1"
+              src="../../../images/lets-cake/arrow.svg"
+              placeholder="blurred"
+              width={60}
+              quality={80}
             />
           </Box>
           <Flex alignItems="center" mr="12px">
@@ -259,13 +272,23 @@ export const Test = () => {
               Select the cheesecake desired and put it into the cart
             </Text>
           </Flex>
-          <Box mr="12px">
+          <Box display={["block", "block", "none"]} my="32px">
             <StaticImage
-              alt="arrow-1"
+              alt="arrow-2"
               src="../../../images/lets-cake/arrow.svg"
               placeholder="blurred"
               width={60}
-              quality={100}
+              quality={80}
+              style={{ transform: "rotate(90deg)" }}
+            />
+          </Box>
+          <Box display={["none", "none", "block"]} mr="12px">
+            <StaticImage
+              alt="arrow-2"
+              src="../../../images/lets-cake/arrow.svg"
+              placeholder="blurred"
+              width={60}
+              quality={80}
             />
           </Box>
           <Flex alignItems="center">
@@ -295,21 +318,21 @@ export const Test = () => {
         </Text>
         <Flex
           justifyContent="space-between"
-          alignItems={["center", "flex-start"]}
-          flexDirection={["column", "row"]}
+          alignItems={["center", "center", "flex-start"]}
+          flexDirection={["column", "column", "row"]}
         >
-          <Box mr={["0px", "60px"]} mb={["60px", "0px"]}>
+          <Box mr={["0px", "0px", "60px"]} mb={["60px", "60px", "0px"]}>
             <FindingCard number={1}>
               5/5 participants wants a more visible “added to cart” notification
             </FindingCard>
           </Box>
-          <Box mr={["0px", "60px"]} mb={["60px", "0px"]}>
+          <Box mr={["0px", "0px", "60px"]} mb={["60px", "60px", "0px"]}>
             <FindingCard number={2}>
-              3/5 participants wants the option for a schedule pickup{" "}
+              3/5 participants wants the option for a schedule pickup
             </FindingCard>
           </Box>
           <FindingCard number={3}>
-            4/5 participants wants a multiple choice of payment{" "}
+            4/5 participants wants a multiple choice of payment
           </FindingCard>
         </Flex>
       </Flex>

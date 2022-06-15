@@ -16,34 +16,38 @@ const BackgroundFlex = styled(Flex)`
 export const UserFlow = () => {
   return (
     <Flex width="100%" flexDirection="column" alignItems="center" mb="50px">
-      <BackgroundFlex flexDirection="column" alignItems="center" width="100%">
+      <BackgroundFlex
+        flexDirection="column"
+        alignItems="center"
+        width="100%"
+        px={["24px", "24px", "0px"]}
+      >
         <Box pt="61px" pb="36px">
           <SectionTitle color="#F1D0D0" backgroundColor="#FDFDFE">
             User flow
           </SectionTitle>
         </Box>
         <Text
-          mb={["24px", "120px"]}
+          mb={["24px", "24px", "120px"]}
           fontFamily="Raleway"
           fontSize="21px"
           fontWeight="300"
           lineHeight="30px"
           letterSpacing="0em"
-          maxWidth={["100%", "50%"]}
-          px={["24px", "0px"]}
-          textAlign={["justify", "center"]}
+          maxWidth={["100%", "90%", "50%"]}
+          textAlign={["justify", "justify", "left"]}
         >
           I then created the user flow, a visual representation of the path that
           the user is gonna follow to complete a task. It starts with an entry
           point, in this case the homepage of the website, and ends with a final
           action, for this project with a product purchase.
         </Text>
-        <Box px={["24px", "0px"]}>
+        <Box px={["24px", "24px", "0px"]}>
           <StaticImage
             alt="sitemap"
             src="../../../images/lets-cake/user-flow.png"
             placeholder="blurred"
-            quality={100}
+            quality={80}
           />
         </Box>
       </BackgroundFlex>
