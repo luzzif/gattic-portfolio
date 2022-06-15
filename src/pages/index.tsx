@@ -107,7 +107,7 @@ const Index = ({ data }: IndexProps) => {
               alt="jobo"
               src="../images/jobo.png"
               objectFit="contain"
-              placeholder="tracedSVG"
+              placeholder="blurred"
               height={200}
             />
           }
@@ -122,7 +122,7 @@ const Index = ({ data }: IndexProps) => {
               alt="the-slice"
               src="../images/lets-cake.png"
               objectFit="contain"
-              placeholder="tracedSVG"
+              placeholder="blurred"
               height={260}
             />
           }
