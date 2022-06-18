@@ -28,6 +28,7 @@ const ImageWithText = ({ image, text }: ImageWithTextProps) => {
         fontWeight="600"
         lineHeight="25px"
         letterSpacing="0em"
+        textAlign="center"
       >
         {text}
       </Text>
@@ -77,59 +78,67 @@ export const CardSorting = () => {
             justifyContent={["space-around", "space-around", "flex-start"]}
             mb={["32px", "32px", "0px"]}
           >
-            <ImageWithText
-              image={
-                <StaticImage
-                  alt="sitemap"
-                  src="../../../images/lets-cake/click.png"
-                  placeholder="blurred"
-                  quality={80}
-                  width={80}
-                />
-              }
-              text="IT'S SIMPLE"
-            />
-            <ImageWithText
-              image={
-                <StaticImage
-                  alt="sitemap"
-                  src="../../../images/lets-cake/chronometer.png"
-                  placeholder="blurred"
-                  quality={80}
-                  width={80}
-                />
-              }
-              text="IT'S QUICK"
-            />
+            <Box width={["50%", "50%", "auto"]}>
+              <ImageWithText
+                image={
+                  <StaticImage
+                    alt="sitemap"
+                    src="../../../images/lets-cake/click.png"
+                    placeholder="blurred"
+                    quality={80}
+                    width={80}
+                  />
+                }
+                text="IT'S SIMPLE"
+              />
+            </Box>
+            <Box width={["50%", "50%", "auto"]}>
+              <ImageWithText
+                image={
+                  <StaticImage
+                    alt="sitemap"
+                    src="../../../images/lets-cake/chronometer.png"
+                    placeholder="blurred"
+                    quality={80}
+                    width={80}
+                  />
+                }
+                text="IT'S QUICK"
+              />
+            </Box>
           </Flex>
           <Flex
             width={["100%", "90%", "auto"]}
             justifyContent={["space-around", "space-around", "flex-start"]}
           >
-            <ImageWithText
-              image={
-                <StaticImage
-                  alt="sitemap"
-                  src="../../../images/lets-cake/lightbulb.png"
-                  placeholder="blurred"
-                  quality={80}
-                  width={80}
-                />
-              }
-              text="IT'S INSIGHTFUL"
-            />
-            <ImageWithText
-              image={
-                <StaticImage
-                  alt="sitemap"
-                  src="../../../images/lets-cake/save-money.png"
-                  placeholder="blurred"
-                  quality={80}
-                  width={80}
-                />
-              }
-              text="IT'S CHEAP"
-            />
+            <Box width={["50%", "50%", "auto"]}>
+              <ImageWithText
+                image={
+                  <StaticImage
+                    alt="sitemap"
+                    src="../../../images/lets-cake/lightbulb.png"
+                    placeholder="blurred"
+                    quality={80}
+                    width={80}
+                  />
+                }
+                text="IT'S INSIGHTFUL"
+              />
+            </Box>
+            <Box width={["50%", "50%", "auto"]}>
+              <ImageWithText
+                image={
+                  <StaticImage
+                    alt="sitemap"
+                    src="../../../images/lets-cake/save-money.png"
+                    placeholder="blurred"
+                    quality={80}
+                    width={80}
+                  />
+                }
+                text="IT'S CHEAP"
+              />
+            </Box>
           </Flex>
         </Flex>
         <Flex
