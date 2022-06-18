@@ -191,7 +191,7 @@ export const StyleGuide = () => {
                   textAlign="left"
                   mb="20px"
                 >
-                  1234 !?&
+                  123!?
                 </Text>
                 <Text
                   fontFamily="Open Sans"
@@ -202,7 +202,7 @@ export const StyleGuide = () => {
                   textAlign="left"
                   mb="20px"
                 >
-                  1234 !?&
+                  123!?
                 </Text>
                 <Text
                   fontFamily="Open Sans"
@@ -212,7 +212,7 @@ export const StyleGuide = () => {
                   letterSpacing="0em"
                   textAlign="left"
                 >
-                  1234 !?&
+                  123!?
                 </Text>
               </Flex>
             </Flex>
@@ -263,7 +263,7 @@ export const StyleGuide = () => {
                   letterSpacing="0em"
                   mb="20px"
                 >
-                  1234 !?&
+                  123!?
                 </Text>
               </Flex>
             </Flex>
