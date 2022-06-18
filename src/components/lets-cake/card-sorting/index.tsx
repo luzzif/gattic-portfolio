@@ -74,8 +74,8 @@ export const CardSorting = () => {
           flexDirection={["column", "column", "row"]}
         >
           <Flex
-            width={["100%", "90%", "auto"]}
-            justifyContent={["space-around", "space-around", "flex-start"]}
+            width={["100%", "90%", "50%"]}
+            justifyContent={["space-around", "space-around", "space-around"]}
             mb={["32px", "32px", "0px"]}
           >
             <Box width={["50%", "50%", "auto"]}>
@@ -108,8 +108,8 @@ export const CardSorting = () => {
             </Box>
           </Flex>
           <Flex
-            width={["100%", "90%", "auto"]}
-            justifyContent={["space-around", "space-around", "flex-start"]}
+            width={["100%", "90%", "50%"]}
+            justifyContent={["space-around", "space-around", "space-around"]}
           >
             <Box width={["50%", "50%", "auto"]}>
               <ImageWithText

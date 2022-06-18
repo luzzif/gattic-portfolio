@@ -9,7 +9,7 @@ export const SectionTitle = styled.div<{
   color: ${(props) => props.color};
   max-width: 340px;
   border-radius: 20px;
-  padding: 20px 70px;
+  padding: 16px 24px;
   font-family: Raleway;
   font-size: 30px;
   font-weight: 700;

@@ -133,7 +133,7 @@ export const Refining = () => {
           fontWeight="400"
           lineHeight="78px"
           letterSpacing="0em"
-          color="#E7B1B1"
+          color="#E6C8D2"
           mb="15px"
           mt="54px"
         >

@@ -81,17 +81,17 @@ export const StyleGuide = () => {
             px={["24px", "24px", "0px"]}
           >
             <Box>
-              <Color color="#D9091F" percentage={10} size={148} />
+              <Color color="#D9091F" percentage={10} size={128} />
             </Box>
             <Flex flexDirection="column">
               <Box mb="30px" alignSelf="flex-end">
-                <Color color="#161A1B" percentage={30} size={180} />
+                <Color color="#161A1B" percentage={30} size={160} />
               </Box>
               <Color
                 color="#FFFFFF"
                 blackPercentage
                 percentage={60}
-                size={219}
+                size={200}
               />
             </Flex>
           </Flex>
