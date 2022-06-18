@@ -2,7 +2,7 @@ import React, { ReactNode } from "react";
 import styled, { createGlobalStyle, ThemeProvider } from "styled-components";
 import { Link } from "gatsby";
 import { SocialIcon } from "../social-icon";
-import { Box, Flex, Image } from "rebass";
+import { Box, Flex } from "rebass";
 import { Seo } from "../seo";
 import "./layout.css";
 
@@ -52,7 +52,7 @@ const FooterEmail = styled.a`
   font-weight: 400;
   line-height: 28px;
   letter-spacing: 0em;
-  color: ${(props) => props.theme.primary};
+  color: #000;
 `;
 
 interface LayoutProps {
@@ -61,6 +61,7 @@ interface LayoutProps {
   behanceSvgUrl: string;
   logoSvgUrl: string;
   hideLogo?: boolean;
+  hideSocials?: boolean;
 }
 
 export const Layout = ({
@@ -69,6 +70,7 @@ export const Layout = ({
   behanceSvgUrl,
   logoSvgUrl,
   hideLogo,
+  hideSocials,
 }: LayoutProps) => {
   return (
     <>
@@ -104,23 +106,30 @@ export const Layout = ({
           mt="60px"
           mb="80px"
         >
-          <Box mr={["0px", "0px", "49px"]} mb={["16px", "16px", "0px"]}>
+          <Box
+            mr={hideSocials ? "0px" : ["0px", "0px", "49px"]}
+            mb={hideSocials ? "0px" : ["16px", "16px", "0px"]}
+          >
             <FooterEmail href="mailto:gatticristina99@gmail.com">
               gatticristina99@gmail.com
             </FooterEmail>
           </Box>
-          <Flex flexDirection={["column", "column", "row"]}>
-            <Box mr={["0px", "0px", "18px"]} mb={["18px", "18px", "0px"]}>
+          {!hideSocials && (
+            <Flex flexDirection={["row", "row", "row"]}>
+              <Box
+                mr={["18px", "18px", "18px"]} /* mb={["18px", "18px", "0px"]} */
+              >
+                <SocialIcon
+                  href="https://www.linkedin.com/in/cristinagatti99/"
+                  imageUrl={linkedinSvgUrl}
+                />
+              </Box>
               <SocialIcon
-                href="https://www.linkedin.com/in/cristinagatti99/"
-                imageUrl={linkedinSvgUrl}
+                href="https://www.behance.net/cristinagatti1"
+                imageUrl={behanceSvgUrl}
               />
-            </Box>
-            <SocialIcon
-              href="https://www.behance.net/cristinagatti1"
-              imageUrl={behanceSvgUrl}
-            />
-          </Flex>
+            </Flex>
+          )}
         </Footer>
       </ThemeProvider>
     </>

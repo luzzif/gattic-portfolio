@@ -66,7 +66,7 @@ const ConnectWithMeText = styled(Flex)`
 `;
 
 const SignatureContainer = styled.div`
-  margin-top: 54px;
+  margin-top: 65px;
 `;
 
 interface AboutProps {
@@ -79,6 +79,7 @@ const About = ({ data }: AboutProps) => {
       linkedinSvgUrl={data.linkedin.publicURL}
       behanceSvgUrl={data.behance.publicURL}
       logoSvgUrl={data.logo.publicURL}
+      hideSocials
     >
       <IntroductionText>
         OH HEY,
@@ -170,7 +171,7 @@ const About = ({ data }: AboutProps) => {
             imageUrl={data.linkedin.publicURL}
           />
         </Box>
-        <Text mr="8px">or shoot me an </Text>
+        <Text mr="8px">or </Text>
         <Box mr="8px">
           <SocialIcon
             href="https://www.behance.net/cristinagatti1"
