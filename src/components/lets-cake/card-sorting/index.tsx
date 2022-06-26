@@ -63,8 +63,8 @@ export const CardSorting = () => {
           textAlign={["justify", "justify", "left"]}
         >
           As the final step in my Ideate phase, I used the card sorting to
-          understand how users think about my content. Why did I choose card
-          sorting?
+          understand <strong>how users think about my content</strong>. Why did
+          I choose card sorting?
         </Text>
         <Flex
           justifyContent="space-around"
@@ -85,7 +85,7 @@ export const CardSorting = () => {
                     alt="sitemap"
                     src="../../../images/lets-cake/click.png"
                     placeholder="blurred"
-                    quality={80}
+                    quality={100}
                     width={80}
                   />
                 }
@@ -99,7 +99,7 @@ export const CardSorting = () => {
                     alt="sitemap"
                     src="../../../images/lets-cake/chronometer.png"
                     placeholder="blurred"
-                    quality={80}
+                    quality={100}
                     width={80}
                   />
                 }
@@ -118,7 +118,7 @@ export const CardSorting = () => {
                     alt="sitemap"
                     src="../../../images/lets-cake/lightbulb.png"
                     placeholder="blurred"
-                    quality={80}
+                    quality={100}
                     width={80}
                   />
                 }
@@ -132,7 +132,7 @@ export const CardSorting = () => {
                     alt="sitemap"
                     src="../../../images/lets-cake/save-money.png"
                     placeholder="blurred"
-                    quality={80}
+                    quality={100}
                     width={80}
                   />
                 }
@@ -151,7 +151,7 @@ export const CardSorting = () => {
               alt="home"
               src="../../../images/lets-cake/home.png"
               placeholder="blurred"
-              quality={80}
+              quality={100}
               width={220}
             />
           </Box>
@@ -160,7 +160,7 @@ export const CardSorting = () => {
               alt="shop"
               src="../../../images/lets-cake/shop.png"
               placeholder="blurred"
-              quality={80}
+              quality={100}
               width={220}
             />
           </Box>
@@ -169,7 +169,7 @@ export const CardSorting = () => {
               alt="cart"
               src="../../../images/lets-cake/cart.png"
               placeholder="blurred"
-              quality={80}
+              quality={100}
               width={220}
             />
           </Box>

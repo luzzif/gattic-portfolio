@@ -55,12 +55,15 @@ export const Define = () => {
               >
                 <p>
                   Based on the conversations with the users, I defined the
-                  target audience and came up with 2 personas.
+                  target audience and came up with <strong>2 personas</strong>.
                 </p>
                 <p>
                   Research and user interviews are key activities to understand
-                  the user because the wrong target audience will lead your
-                  project to failure.
+                  the user because{" "}
+                  <strong>
+                    the wrong target audience will lead your project to failure
+                  </strong>
+                  .
                 </p>
               </Text>
               <StaticImage
@@ -68,7 +71,7 @@ export const Define = () => {
                 src="../../../images/lets-cake/persona-2.png"
                 width={600}
                 placeholder="blurred"
-                quality={80}
+                quality={100}
               />
             </Flex>
             <Box mt={["24px", "24px", "0px"]}>
@@ -77,7 +80,7 @@ export const Define = () => {
                 src="../../../images/lets-cake/persona-1.png"
                 width={600}
                 placeholder="blurred"
-                quality={80}
+                quality={100}
               />
             </Box>
           </Flex>

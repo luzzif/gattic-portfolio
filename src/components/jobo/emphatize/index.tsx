@@ -62,23 +62,31 @@ export const Emphatize = ({
         1. Understand the target user
       </OrderedListPointText>
       <BodyText mb="40px">
-        After the user interviews, I identified 2 user groups and I came up with
-        2 personas who best describe the demographics of Jobo users. The primary
-        user group consisted of young graduates who want to enter the world of
-        work and have some advice to do it in the better way. The other user
-        group consisted of adults who want change their career but they can't
-        find the right place to start the new journey. These personas will allow
-        me to remember the people that I am designing the product for, their
-        needs and want, as well as their pain points.
+        <p>
+          After the user interviews, I identified 2 user groups and I came up
+          with
+          <strong>2 personas</strong> who best describe the demographics of Jobo
+          users.
+        </p>
+        <p>
+          The <strong>primary user</strong> group consisted of{" "}
+          <strong>young graduates</strong> who want to enter the world of work
+          and have some advice to do it in the better way. The{" "}
+          <strong>other user group</strong> consisted of <strong>adults</strong>{" "}
+          who want change their career but they can't find the right place to
+          start the new journey.
+        </p>
+        These personas will allow me to remember the people that I am designing
+        the product for, their needs and want, as well as their pain points.
       </BodyText>
       <GatsbyImage alt="personas" image={personasImage} />
       <OrderedListPointText mb="26px" mt="44px">
         2. Understand the users' feeling
       </OrderedListPointText>
       <BodyText mb="40px">
-        After defined Jobo's user groups, I came up with empathy maps that will
-        allow me to put myself in someone else's shoes and understand users
-        better.
+        After defined Jobo's user groups, I came up with{" "}
+        <strong>empathy maps</strong> that will allow me to put myself in
+        someone else's shoes and understand users better.
       </BodyText>
       <GatsbyImage alt="empathy" image={empathyMapImage} />
       <OrderedListPointText mb="47px" mt="44px">

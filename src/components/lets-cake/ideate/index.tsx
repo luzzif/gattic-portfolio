@@ -47,12 +47,12 @@ export const Ideate = () => {
             letterSpacing="0em"
             textAlign={["justify", "justify", "left"]}
           >
-            After found out who my targert audience is, I created a sitemap of
-            the website. Knowing the bad experience with other bakeries website
-            is a primary pain point for users, I used that knowledge to create
-            an information architecture that would improve the overall website
-            navigation. The structure I chose was designed to make things clear
-            and easy.
+            After found out who my targert audience is, I created a{" "}
+            <strong>sitemap</strong> of the website. Knowing the bad experience
+            with other bakeries website is a primary pain point for users, I
+            used that knowledge to create an information architecture that would{" "}
+            <strong>improve the overall website navigation</strong>. The
+            structure I chose was designed to make things clear and easy.
           </Text>
         </Flex>
         <Box mb="20px" px={["24px", "24px", "0px"]}>
@@ -60,7 +60,7 @@ export const Ideate = () => {
             alt="sitemap"
             src="../../../images/lets-cake/sitemap.png"
             placeholder="blurred"
-            quality={80}
+            quality={100}
           />
         </Box>
       </BackgroundFlex>

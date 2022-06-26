@@ -45,7 +45,7 @@ export const Define = ({ goalsImage, joeyImage, graceImage }: DefineProps) => {
           >
             <GatsbyImage alt="joey" image={joeyImage} />
           </Box>
-          <Flex flexDirection="column" alignItems={["center", "auto"]}>
+          <Flex flexDirection="column" alignItems={["center", "flex-start"]}>
             <Text
               mb="15px"
               fontFamily="EB Garamond"
@@ -63,9 +63,19 @@ export const Define = ({ goalsImage, joeyImage, graceImage }: DefineProps) => {
               letterSpacing="0em"
               textAlign={["center", "left"]}
             >
-              Joey is a student teenager who needs some tips to enter the
-              workforce and find a job because she wants to enter the world of
-              work.
+              <i>
+                <strong style={{ fontWeight: 400 }}>Joey</strong> is a{" "}
+                <strong style={{ fontWeight: 400 }}>student teenager</strong>{" "}
+                who needs{" "}
+                <strong style={{ fontWeight: 400 }}>
+                  some tips to enter the workforce and find a job
+                </strong>{" "}
+                because{" "}
+                <strong style={{ fontWeight: 400 }}>
+                  she wants to enter the world of work
+                </strong>
+                .
+              </i>
             </Text>
           </Flex>
         </Flex>
@@ -103,9 +113,19 @@ export const Define = ({ goalsImage, joeyImage, graceImage }: DefineProps) => {
               letterSpacing="0em"
               textAlign={["center", "left"]}
             >
-              Joey is a student teenager who needs some tips to enter the
-              workforce and find a job because she wants to enter the world of
-              work.
+              <i>
+                <strong style={{ fontWeight: 400 }}>Grace</strong> is an{" "}
+                <strong style={{ fontWeight: 400 }}>IT developer</strong> who
+                needs{" "}
+                <strong style={{ fontWeight: 400 }}>
+                  to change her job and get a better
+                </strong>{" "}
+                one because{" "}
+                <strong style={{ fontWeight: 400 }}>
+                  she's no longer happy with the one she has
+                </strong>
+                .
+              </i>
             </Text>
           </Flex>
         </Flex>
@@ -115,7 +135,7 @@ export const Define = ({ goalsImage, joeyImage, graceImage }: DefineProps) => {
       </Title>
       <BodyText mb="48px">
         Before I could make any decisions on what kind of solutions I wanted to
-        make, I needed to have a clear understanding of the goals I’m trying to
+        make, I needed to have a clear understanding of the goals I'm trying to
         achieve. These goals will help me follow the right direction to the
         final project.
       </BodyText>

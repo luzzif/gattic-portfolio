@@ -108,8 +108,8 @@ export const Test = () => {
           mb="40px"
         >
           Once created the prototype, I asked users to perform certain tasks.
-          With the usability test I want to see how users interact with my
-          design.
+          With the usability test I want to see{" "}
+          <strong>how users interact with my design</strong>.
         </Text>
         <Text
           fontFamily="Raleway"
@@ -133,7 +133,7 @@ export const Test = () => {
                   src="../../../images/lets-cake/calendar.svg"
                   placeholder="blurred"
                   width={30}
-                  quality={80}
+                  quality={100}
                 />
               </Box>
               <Text
@@ -153,7 +153,7 @@ export const Test = () => {
                   src="../../../images/lets-cake/spot.svg"
                   placeholder="blurred"
                   width={30}
-                  quality={80}
+                  quality={100}
                 />
               </Box>
               <Text
@@ -175,7 +175,7 @@ export const Test = () => {
                   src="../../../images/lets-cake/people.svg"
                   placeholder="blurred"
                   width={30}
-                  quality={80}
+                  quality={100}
                 />
               </Box>
               <Text
@@ -195,7 +195,7 @@ export const Test = () => {
                   src="../../../images/lets-cake/clock.svg"
                   placeholder="blurred"
                   width={30}
-                  quality={80}
+                  quality={100}
                 />
               </Box>
               <Text
@@ -246,7 +246,7 @@ export const Test = () => {
               src="../../../images/lets-cake/arrow.svg"
               placeholder="blurred"
               width={60}
-              quality={80}
+              quality={100}
               style={{ transform: "rotate(90deg)" }}
             />
           </Box>
@@ -256,7 +256,7 @@ export const Test = () => {
               src="../../../images/lets-cake/arrow.svg"
               placeholder="blurred"
               width={60}
-              quality={80}
+              quality={100}
             />
           </Box>
           <Flex alignItems="center" mr="12px">
@@ -278,7 +278,7 @@ export const Test = () => {
               src="../../../images/lets-cake/arrow.svg"
               placeholder="blurred"
               width={60}
-              quality={80}
+              quality={100}
               style={{ transform: "rotate(90deg)" }}
             />
           </Box>
@@ -288,7 +288,7 @@ export const Test = () => {
               src="../../../images/lets-cake/arrow.svg"
               placeholder="blurred"
               width={60}
-              quality={80}
+              quality={100}
             />
           </Box>
           <Flex alignItems="center">

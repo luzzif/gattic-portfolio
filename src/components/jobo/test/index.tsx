@@ -136,9 +136,9 @@ export const Test = ({
       <Title mb="20px">AFFINITY MAP</Title>
       <BodyText mb="50px">
         After conducted the usability study, I put together all the observations
-        discovered from the testing and I used an affinity map to synthesize my
-        findings. This helped me to get a better look at the different
-        experiences users had and uncover key insights.
+        discovered from the testing and I used an <strong>affinity map</strong>{" "}
+        to synthesize my findings. This helped me to get a better look at the
+        different experiences users had and uncover key insights.
       </BodyText>
       <GatsbyImage alt="affinity" image={affinityImage} />
       <Title mt="50px" mb="20px">
@@ -237,14 +237,18 @@ export const Test = ({
       </Title>
       <BodyText mb="40px">
         <p>
-          Based on the insights from the usability studies, I applied design
-          changes to my designs.
+          Based on the{" "}
+          <i>
+            <strong style={{ fontWeight: 400 }}>insights</strong>
+          </i>{" "}
+          from the usability studies, I applied design changes to my designs.
         </p>
         <p>
-          I added filters to the job search for an easier online experience and
-          I also modified the “Edit” button in the job application and added
-          stepper that indicates at what point of the job application the user
-          is.
+          I added <strong>filters</strong> to the job search for an easier
+          online experience and I also modified the{" "}
+          <strong>“Edit” button</strong> in the job application and added
+          <strong>stepper</strong> that indicates at what point of the job
+          application the user is.
         </p>
       </BodyText>
       <GatsbyImage alt="usability" image={usabilityImage} />

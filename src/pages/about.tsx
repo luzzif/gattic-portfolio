@@ -97,7 +97,7 @@ const About = ({ data }: AboutProps) => {
           >
             <Title>Who am I?</Title>
             <Body>
-              I’m a <b>junior UX designer</b> with a backgorund in customer
+              I'm a <b>junior UX designer</b> with a backgorund in customer
               service. I love working with people and help them feeling better
               and my previous experiences in this role helped me better
               understand the needs and the fears of customers.
@@ -105,7 +105,7 @@ const About = ({ data }: AboutProps) => {
             <Title>Why UX design?</Title>
             <Body>
               The world of design has always fascinated me but I always saw it
-              like something I couldn’t aspire to. <br />
+              like something I couldn't aspire to. <br />
               Last year with the lockdowns and the whole Covid situation, I
               decided to <b>turn my life around</b> and start doing what I am
               really passionate about.
@@ -116,7 +116,7 @@ const About = ({ data }: AboutProps) => {
               Professional course on Coursera and a fews months ago I started
               and finished the <b>Google UX Design</b> course to acquire the
               foundamentals to enter the UX world. I'm now ready to start a new
-              one, to deep dive into the UX and put in practice what I’ve
+              one, to deep dive into the UX and put in practice what I've
               learned.
             </Body>
             <Title>Why me?</Title>
@@ -139,7 +139,7 @@ const About = ({ data }: AboutProps) => {
                 alt="me"
                 src="../images/cristina.png"
                 placeholder="blurred"
-                quality={80}
+                quality={100}
               />
             </Box>
             <Box display={["block", "block", "none"]}>
@@ -148,7 +148,7 @@ const About = ({ data }: AboutProps) => {
                 alt="me"
                 src="../images/cristina.png"
                 placeholder="blurred"
-                quality={80}
+                quality={100}
               />
             </Box>
           </Flex>
@@ -156,7 +156,7 @@ const About = ({ data }: AboutProps) => {
       </OuterContainer>
       <BoldFooterText>
         Want to talk about what I could bring to you or why am I the right fit
-        for you? Don’t be shy, let’s connect!
+        for you? Don't be shy, let's connect!
       </BoldFooterText>
       <ConnectWithMeText
         mt="40px"
@@ -185,7 +185,7 @@ const About = ({ data }: AboutProps) => {
           src="../images/signature.png"
           width={235}
           placeholder="blurred"
-          quality={80}
+          quality={100}
         />
       </SignatureContainer>
     </Layout>

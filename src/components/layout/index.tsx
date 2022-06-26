@@ -15,6 +15,10 @@ const GlobalStyle = createGlobalStyle`
     width: 100%;
     max-width: 100%;
   }
+
+  strong {
+    font-weight: 500;
+  }
 `;
 
 const Header = styled(Flex)`

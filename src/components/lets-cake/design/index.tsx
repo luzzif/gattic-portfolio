@@ -54,7 +54,7 @@ export const Design = () => {
         >
           After sketched out paper wireframes for each screen in my app, I moved
           from paper wireframes to the digital wireframes. I decided to design
-          my wireframes with a <strong>basic structure</strong> that I’ll use to
+          my wireframes with a <strong>basic structure</strong> that I'll use to
           build upon.
         </Text>
         <Text
@@ -67,7 +67,7 @@ export const Design = () => {
           letterSpacing="0em"
           textAlign={["justify", "justify", "right"]}
         >
-          For me it’s important to start with the basic structure because{" "}
+          For me it's important to start with the basic structure because{" "}
           <strong>
             it creates the main outline for the rest of the content
           </strong>{" "}
@@ -92,7 +92,7 @@ export const Design = () => {
         <StaticImage
           alt="mockups"
           src="../../../images/lets-cake/background10.png"
-          quality={80}
+          quality={100}
           placeholder="blurred"
           layout="fullWidth"
           objectFit="fill"

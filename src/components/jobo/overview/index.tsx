@@ -42,9 +42,9 @@ export const JoboOverview = () => {
           <Box mb="36px">
             <SectionTitle>THE PROBLEM</SectionTitle>
             <SectionBody>
-              Most of young graduates doesn’t know much about the world of work
+              Most of young graduates doesn't know much about the world of work
               and how to enter it in the easiest and smoothest way and some
-              adults with a career in their back can’t find a job because of
+              adults with a career in their back can't find a job because of
               their age.
             </SectionBody>
           </Box>

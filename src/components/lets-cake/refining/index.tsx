@@ -169,7 +169,7 @@ export const Refining = () => {
               src="../../../images/lets-cake/arrow.svg"
               placeholder="blurred"
               width={60}
-              quality={80}
+              quality={100}
               style={{ transform: "rotate(90deg)" }}
             />
           </Box>
@@ -183,7 +183,7 @@ export const Refining = () => {
               src="../../../images/lets-cake/arrow.svg"
               placeholder="blurred"
               width={60}
-              quality={80}
+              quality={100}
             />
           </Box>
           <Flex alignItems="center">

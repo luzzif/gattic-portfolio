@@ -33,7 +33,7 @@ export const Header = () => {
               alt="header-image"
               src="../../../images/lets-cake/header1.png"
               placeholder="blurred"
-              quality={80}
+              quality={100}
             />
           </Box>
           <Flex
@@ -47,7 +47,7 @@ export const Header = () => {
                 alt="header-logo"
                 src="../../../images/lets-cake/logo.png"
                 placeholder="blurred"
-                quality={80}
+                quality={100}
               />
             </Box>
             <Text
@@ -113,7 +113,7 @@ export const Header = () => {
               alt="header-image"
               src="../../../images/lets-cake/header2.png"
               placeholder="blurred"
-              quality={80}
+              quality={100}
             />
           </Box>
         </Flex>

@@ -37,17 +37,18 @@ export const UserFlow = () => {
           maxWidth={["100%", "90%", "50%"]}
           textAlign={["justify", "justify", "left"]}
         >
-          I then created the user flow, a visual representation of the path that
-          the user is gonna follow to complete a task. It starts with an entry
-          point, in this case the homepage of the website, and ends with a final
-          action, for this project with a product purchase.
+          I then created the <strong>user flow</strong>, a visual representation
+          of the path that the user is gonna follow to complete a task. It
+          starts with an <strong>entry point</strong>, in this case the homepage
+          of the website, and ends with a <strong>final action</strong>, for
+          this project with a product purchase.
         </Text>
         <Box px={["24px", "24px", "0px"]}>
           <StaticImage
             alt="sitemap"
             src="../../../images/lets-cake/user-flow.png"
             placeholder="blurred"
-            quality={80}
+            quality={100}
           />
         </Box>
       </BackgroundFlex>

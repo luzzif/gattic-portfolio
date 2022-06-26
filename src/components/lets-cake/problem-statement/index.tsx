@@ -106,15 +106,17 @@ export const ProblemStatement = () => {
             mb={["24px", "24px", "0px"]}
           >
             <p>
-              I conducted user interviews, which I then turned into empathy maps
-              to better understand the target user and their needs. A primary
-              user group identified through the research consisted of busy
-              working adults who want to relax with their favorite dessert after
-              a long day at work.
+              I conducted <strong>user interviews</strong>, which I then turned
+              into <strong>empathy maps</strong>
+              to better understand the target user and their needs. A{" "}
+              <strong>primary user group</strong> identified through the
+              research consisted of busy working adults who want to relax with
+              their favorite dessert after a long day at work.
             </p>
             <p>
-              The research also revealed that another group of users are teens
-              who love sweets but bad at making them.
+              The research also revealed that{" "}
+              <strong>another group of users</strong> are teens who love sweets
+              but bad at making them.
             </p>
           </Text>
           <Flex
@@ -164,7 +166,7 @@ export const ProblemStatement = () => {
                   objectFit="contain"
                   placeholder="blurred"
                   alt="chart"
-                  quality={80}
+                  quality={100}
                 />
               </Box>
               <Text

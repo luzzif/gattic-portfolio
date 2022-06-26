@@ -28,9 +28,10 @@ export const Ideate = ({
         BRAINSTORMING
       </Title>
       <BodyText mb="48px">
-        After a deep understanding of the user, it’s now time to brainstorming
-        some protentional solutions. At this stage, I put the focus on quantity
-        of ideas and not on quality.
+        After a deep understanding of the user, it's now time to{" "}
+        <strong>brainstorming</strong>
+        some protentional solutions. At this stage, I put the focus on{" "}
+        <strong>quantity of ideas</strong> and not on quality.
       </BodyText>
       <GatsbyImage alt="brainstorming" image={brainstormingImage} />
       <Title mt="50px" mb="20px">

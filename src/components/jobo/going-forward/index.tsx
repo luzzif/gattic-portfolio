@@ -32,7 +32,7 @@ export const GoingForward = () => {
       <BodyText mb="50px">
         While designing Jobo responsive website, I learned that the first ideas
         are only the beginning of the process. Usability studies and peer
-        feedback influenced each iteration of the website’s designs.
+        feedback influenced each iteration of the website's designs.
       </BodyText>
       <Title mb="70px">NEXT STEPS</Title>
       <Flex

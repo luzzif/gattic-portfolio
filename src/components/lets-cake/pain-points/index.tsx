@@ -124,7 +124,7 @@ export const PainPoints = () => {
           textAlign={["justify", "justify", "left"]}
         >
           The Slice Bakery website will improve the overall customer experience,
-          turning pain points into strengths.
+          <strong>turning pain points into strengths</strong>.
         </Text>
         <Flex
           justifyContent="space-between"
@@ -139,7 +139,7 @@ export const PainPoints = () => {
               <NumberWithText
                 number={1}
                 title="Lifestyle"
-                description="Don’t have the time to wait on the spot"
+                description="Don't have the time to wait on the spot"
               />
             </Box>
             <Box>
@@ -155,7 +155,7 @@ export const PainPoints = () => {
                   <StaticImage
                     height={252.06}
                     placeholder="blurred"
-                    quality={80}
+                    quality={100}
                     alt="1"
                     src="../../../images/lets-cake/pain-points-1.png"
                   />
@@ -185,7 +185,7 @@ export const PainPoints = () => {
                   <StaticImage
                     height={252.06}
                     placeholder="blurred"
-                    quality={80}
+                    quality={100}
                     alt="2"
                     src="../../../images/lets-cake/pain-points-2.png"
                   />
@@ -215,7 +215,7 @@ export const PainPoints = () => {
                   <StaticImage
                     height={252.06}
                     placeholder="blurred"
-                    quality={80}
+                    quality={100}
                     alt="3"
                     src="../../../images/lets-cake/pain-points-3.png"
                   />
