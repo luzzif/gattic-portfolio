@@ -10,7 +10,7 @@ const BackgroundFlex = styled(Flex)`
   background-repeat: no-repeat;
   background-size: 110%;
   background-attachment: scroll;
-  background-position: center -55%;
+  background-position: center -40%;
 `;
 
 export const UserFlow = () => {

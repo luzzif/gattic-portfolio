@@ -6,6 +6,7 @@ import { SocialIcon } from "../components/social-icon";
 import { Work } from "../components/work";
 import { StaticImage } from "gatsby-plugin-image";
 import { Box, Flex, Image, Text } from "rebass";
+import { ContactForm } from "../components/contact-form";
 
 const SummaryText = styled(Text)`
   max-width: 540px;
@@ -130,6 +131,9 @@ const Index = ({ data }: IndexProps) => {
           description="Web design for ordering cakes online from a local bakery"
           to="/the-slice"
         />
+        <Box mt="80px" width="100%" display="flex" justifyContent="center">
+          <ContactForm />
+        </Box>
       </Flex>
     </Layout>
   );

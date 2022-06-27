@@ -31,7 +31,7 @@ export const EmpathyMaps = () => {
           fontWeight="300"
           lineHeight="30px"
           letterSpacing="0em"
-          textAlign={["justify", "justify", "center"]}
+          textAlign={["justify", "justify", "left"]}
         >
           To deeply emphatize with users I created an{" "}
           <strong>empathy map</strong>, a visualization tool that allows me to

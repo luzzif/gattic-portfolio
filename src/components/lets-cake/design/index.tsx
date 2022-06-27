@@ -5,20 +5,18 @@ import styled from "styled-components";
 import background10 from "../../../images/lets-cake/background10.png";
 
 const BackgroundFlex = styled(Flex)`
-  position: absolute;
   width: 100%;
-  height: 100%;
-  top: 300px;
   background-image: url(${background10});
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
-  background-position: top;
+  background-position: center;
 `;
 
 export const Design = () => {
   return (
-    <Flex
+    <BackgroundFlex
+      height={["3500px", "3500px", "2500px"]}
       mt="50px"
       pt={["36px", "36px", "67px"]}
       width="100%"
@@ -44,7 +42,7 @@ export const Design = () => {
         </Text>
         <Text
           alignSelf={["flex-start", "flex-start", "flex-end"]}
-          maxWidth={["100%", "100%", "80%"]}
+          maxWidth={["100%", "100%", "90%"]}
           mb="22px"
           fontSize="21px"
           fontWeight="300"
@@ -88,7 +86,7 @@ export const Design = () => {
           to your cart and buying it.
         </Text>
       </Flex>
-      <Box width="100%">
+      {/* <Box width="100%" style={{ position: "relative", top: -100 }}>
         <StaticImage
           alt="mockups"
           src="../../../images/lets-cake/background10.png"
@@ -97,7 +95,7 @@ export const Design = () => {
           layout="fullWidth"
           objectFit="fill"
         />
-      </Box>
-    </Flex>
+      </Box> */}
+    </BackgroundFlex>
   );
 };

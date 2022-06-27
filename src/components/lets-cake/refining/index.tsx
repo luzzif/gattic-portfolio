@@ -90,7 +90,7 @@ export const Refining = () => {
       >
         <Flex
           flexDirection="column"
-          width={["100%", "80%", "60%"]}
+          width={["100%", "80%", "65%"]}
           mb="40px"
           mt="34px"
           px={["24px", "24px", "0px"]}
