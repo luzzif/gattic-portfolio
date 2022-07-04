@@ -99,9 +99,8 @@ const Index = ({ data }: IndexProps) => {
             <StaticImage
               alt="jobo"
               src="../images/jobo.png"
-              objectFit="contain"
               placeholder="none"
-              height={200}
+              layout="fullWidth"
             />
           }
           title="JOBO"
@@ -114,9 +113,8 @@ const Index = ({ data }: IndexProps) => {
             <StaticImage
               alt="the-slice"
               src="../images/lets-cake.png"
-              objectFit="contain"
               placeholder="none"
-              height={260}
+              layout="fullWidth"
             />
           }
           title="THE SLICE BAKERY"
