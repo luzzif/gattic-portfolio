@@ -164,7 +164,7 @@ export const ProblemStatement = () => {
                 <StaticImage
                   src="../../../images/lets-cake/chart.png"
                   objectFit="contain"
-                  placeholder="blurred"
+                  placeholder="none"
                   alt="chart"
                   quality={100}
                 />

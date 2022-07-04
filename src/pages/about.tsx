@@ -92,7 +92,7 @@ const About = ({ data }: AboutProps) => {
           px="20px"
         >
           <FlexColumnContainer
-            width={["100%", "100%", "70%"]}
+            width={["100%", "100%", "60%"]}
             marginRight={["0px", "0px", "77px"]}
           >
             <Title>Who am I?</Title>
@@ -130,24 +130,23 @@ const About = ({ data }: AboutProps) => {
           </FlexColumnContainer>
           <Flex
             justifyContent="center"
-            width={["100%", "100%", "30%"]}
+            alignItems="center"
+            width={["100%", "100%", "40%"]}
             mb={["40px", "40px", "0px"]}
           >
             <Box display={["none", "none", "block"]} mt="50px">
               <StaticImage
-                aspectRatio={9 / 16}
                 alt="me"
                 src="../images/cristina.png"
-                placeholder="blurred"
+                placeholder="none"
                 quality={100}
               />
             </Box>
             <Box display={["block", "block", "none"]}>
               <StaticImage
-                aspectRatio={1 / 1}
                 alt="me"
                 src="../images/cristina.png"
-                placeholder="blurred"
+                placeholder="none"
                 quality={100}
               />
             </Box>
@@ -184,7 +183,7 @@ const About = ({ data }: AboutProps) => {
           alt="signature"
           src="../images/signature.png"
           width={235}
-          placeholder="blurred"
+          placeholder="none"
           quality={100}
         />
       </SignatureContainer>

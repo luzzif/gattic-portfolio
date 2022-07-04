@@ -154,7 +154,7 @@ export const PainPoints = () => {
                 image={
                   <StaticImage
                     height={252.06}
-                    placeholder="blurred"
+                    placeholder="none"
                     quality={100}
                     alt="1"
                     src="../../../images/lets-cake/pain-points-1.png"
@@ -184,7 +184,7 @@ export const PainPoints = () => {
                 image={
                   <StaticImage
                     height={252.06}
-                    placeholder="blurred"
+                    placeholder="none"
                     quality={100}
                     alt="2"
                     src="../../../images/lets-cake/pain-points-2.png"
@@ -214,7 +214,7 @@ export const PainPoints = () => {
                 image={
                   <StaticImage
                     height={252.06}
-                    placeholder="blurred"
+                    placeholder="none"
                     quality={100}
                     alt="3"
                     src="../../../images/lets-cake/pain-points-3.png"

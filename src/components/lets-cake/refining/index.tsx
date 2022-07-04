@@ -116,6 +116,15 @@ export const Refining = () => {
           mb="50px"
           px={["24px", "24px", "0px"]}
         >
+          <Box mb="20px">
+            <StaticImage
+              alt="arrow-1"
+              src="../../../images/lets-cake/refining.png"
+              placeholder="none"
+              layout="fullWidth"
+              quality={100}
+            />
+          </Box>
           <Box mr={["0px", "0px", "60px"]} mb={["24px", "24px", "0px"]}>
             <FindingCard number={1}>
               Headings with different sized text for clear visual hierachy{" "}
@@ -167,7 +176,7 @@ export const Refining = () => {
             <StaticImage
               alt="arrow-2"
               src="../../../images/lets-cake/arrow.svg"
-              placeholder="blurred"
+              placeholder="none"
               width={60}
               quality={100}
               style={{ transform: "rotate(90deg)" }}
@@ -181,7 +190,7 @@ export const Refining = () => {
             <StaticImage
               alt="arrow-1"
               src="../../../images/lets-cake/arrow.svg"
-              placeholder="blurred"
+              placeholder="none"
               width={60}
               quality={100}
             />

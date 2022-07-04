@@ -59,7 +59,7 @@ export const Ideate = () => {
           <StaticImage
             alt="sitemap"
             src="../../../images/lets-cake/sitemap.png"
-            placeholder="blurred"
+            placeholder="none"
             quality={100}
           />
         </Box>

@@ -84,7 +84,7 @@ export const CardSorting = () => {
                   <StaticImage
                     alt="sitemap"
                     src="../../../images/lets-cake/click.png"
-                    placeholder="blurred"
+                    placeholder="none"
                     quality={100}
                     width={80}
                   />
@@ -98,7 +98,7 @@ export const CardSorting = () => {
                   <StaticImage
                     alt="sitemap"
                     src="../../../images/lets-cake/chronometer.png"
-                    placeholder="blurred"
+                    placeholder="none"
                     quality={100}
                     width={80}
                   />
@@ -117,7 +117,7 @@ export const CardSorting = () => {
                   <StaticImage
                     alt="sitemap"
                     src="../../../images/lets-cake/lightbulb.png"
-                    placeholder="blurred"
+                    placeholder="none"
                     quality={100}
                     width={80}
                   />
@@ -131,7 +131,7 @@ export const CardSorting = () => {
                   <StaticImage
                     alt="sitemap"
                     src="../../../images/lets-cake/save-money.png"
-                    placeholder="blurred"
+                    placeholder="none"
                     quality={100}
                     width={80}
                   />
@@ -150,7 +150,7 @@ export const CardSorting = () => {
             <StaticImage
               alt="home"
               src="../../../images/lets-cake/home.png"
-              placeholder="blurred"
+              placeholder="none"
               quality={100}
               width={220}
             />
@@ -159,7 +159,7 @@ export const CardSorting = () => {
             <StaticImage
               alt="shop"
               src="../../../images/lets-cake/shop.png"
-              placeholder="blurred"
+              placeholder="none"
               quality={100}
               width={220}
             />
@@ -168,7 +168,7 @@ export const CardSorting = () => {
             <StaticImage
               alt="cart"
               src="../../../images/lets-cake/cart.png"
-              placeholder="blurred"
+              placeholder="none"
               quality={100}
               width={220}
             />

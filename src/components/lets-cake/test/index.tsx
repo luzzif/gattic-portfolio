@@ -131,7 +131,7 @@ export const Test = () => {
                 <StaticImage
                   alt="calendar"
                   src="../../../images/lets-cake/calendar.svg"
-                  placeholder="blurred"
+                  placeholder="none"
                   width={30}
                   quality={100}
                 />
@@ -151,7 +151,7 @@ export const Test = () => {
                 <StaticImage
                   alt="spot"
                   src="../../../images/lets-cake/spot.svg"
-                  placeholder="blurred"
+                  placeholder="none"
                   width={30}
                   quality={100}
                 />
@@ -173,7 +173,7 @@ export const Test = () => {
                 <StaticImage
                   alt="people"
                   src="../../../images/lets-cake/people.svg"
-                  placeholder="blurred"
+                  placeholder="none"
                   width={30}
                   quality={100}
                 />
@@ -193,7 +193,7 @@ export const Test = () => {
                 <StaticImage
                   alt="clock"
                   src="../../../images/lets-cake/clock.svg"
-                  placeholder="blurred"
+                  placeholder="none"
                   width={30}
                   quality={100}
                 />
@@ -244,7 +244,7 @@ export const Test = () => {
             <StaticImage
               alt="arrow-1"
               src="../../../images/lets-cake/arrow.svg"
-              placeholder="blurred"
+              placeholder="none"
               width={60}
               quality={100}
               style={{ transform: "rotate(90deg)" }}
@@ -254,7 +254,7 @@ export const Test = () => {
             <StaticImage
               alt="arrow-1"
               src="../../../images/lets-cake/arrow.svg"
-              placeholder="blurred"
+              placeholder="none"
               width={60}
               quality={100}
             />
@@ -276,7 +276,7 @@ export const Test = () => {
             <StaticImage
               alt="arrow-2"
               src="../../../images/lets-cake/arrow.svg"
-              placeholder="blurred"
+              placeholder="none"
               width={60}
               quality={100}
               style={{ transform: "rotate(90deg)" }}
@@ -286,7 +286,7 @@ export const Test = () => {
             <StaticImage
               alt="arrow-2"
               src="../../../images/lets-cake/arrow.svg"
-              placeholder="blurred"
+              placeholder="none"
               width={60}
               quality={100}
             />

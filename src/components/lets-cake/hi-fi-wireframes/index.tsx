@@ -33,7 +33,7 @@ export const HiFiWireframes = () => {
           alt="mockups"
           src="../../../images/lets-cake/background12.png"
           quality={100}
-          placeholder="blurred"
+          placeholder="none"
           layout="fullWidth"
           objectFit="fill"
         />

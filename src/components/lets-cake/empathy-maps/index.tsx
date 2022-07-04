@@ -49,7 +49,7 @@ export const EmpathyMaps = () => {
             <StaticImage
               alt="empathy-map-1"
               src="../../../images/lets-cake/empathy-map-1.png"
-              placeholder="blurred"
+              placeholder="none"
               quality={100}
             />
           </Box>
@@ -57,7 +57,7 @@ export const EmpathyMaps = () => {
             <StaticImage
               alt="empathy-map-2"
               src="../../../images/lets-cake/empathy-map-2.png"
-              placeholder="blurred"
+              placeholder="none"
               quality={100}
             />
           </Box>

@@ -47,7 +47,7 @@ export const UserFlow = () => {
           <StaticImage
             alt="sitemap"
             src="../../../images/lets-cake/user-flow.png"
-            placeholder="blurred"
+            placeholder="none"
             quality={100}
           />
         </Box>

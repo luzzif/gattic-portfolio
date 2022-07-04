@@ -32,7 +32,7 @@ export const Header = () => {
             <StaticImage
               alt="header-image"
               src="../../../images/lets-cake/header1.png"
-              placeholder="blurred"
+              placeholder="none"
               quality={100}
             />
           </Box>
@@ -46,7 +46,7 @@ export const Header = () => {
               <StaticImage
                 alt="header-logo"
                 src="../../../images/lets-cake/logo.png"
-                placeholder="blurred"
+                placeholder="none"
                 quality={100}
               />
             </Box>
@@ -112,7 +112,7 @@ export const Header = () => {
             <StaticImage
               alt="header-image"
               src="../../../images/lets-cake/header2.png"
-              placeholder="blurred"
+              placeholder="none"
               quality={100}
             />
           </Box>

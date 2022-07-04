@@ -91,7 +91,7 @@ export const Design = () => {
           alt="mockups"
           src="../../../images/lets-cake/background10.png"
           quality={100}
-          placeholder="blurred"
+          placeholder="none"
           layout="fullWidth"
           objectFit="fill"
         />

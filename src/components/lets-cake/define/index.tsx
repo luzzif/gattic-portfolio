@@ -70,7 +70,7 @@ export const Define = () => {
                 alt="persona-1"
                 src="../../../images/lets-cake/persona-2.png"
                 width={600}
-                placeholder="blurred"
+                placeholder="none"
                 quality={100}
               />
             </Flex>
@@ -79,7 +79,7 @@ export const Define = () => {
                 alt="persona-2"
                 src="../../../images/lets-cake/persona-1.png"
                 width={600}
-                placeholder="blurred"
+                placeholder="none"
                 quality={100}
               />
             </Box>
