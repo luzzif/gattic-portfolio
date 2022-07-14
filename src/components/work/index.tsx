@@ -14,7 +14,6 @@ const OuterContainer = styled(Link)`
 const RootFlex = styled(Flex)`
   background-color: #f5f5f5;
   border-radius: 20px;
-  padding: 0 28px;
 `;
 
 interface WorkProps {
@@ -47,10 +46,11 @@ export const Work = ({
           py={["24px", "24px", "0px"]}
           justifyContent={["flex-start", "space-between"]}
           alignItems="center"
-          width={["100%", "90%", "65%"]}
+          width="100%"
         >
           <Box mb={["24px", "24px", "0px"]}>{image}</Box>
           <Flex
+            flexGrow="1"
             justifyContent="center"
             alignItems="center"
             flexDirection="column"

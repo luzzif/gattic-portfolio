@@ -147,6 +147,7 @@ export const PainPoints = () => {
                 height={168.55}
                 src="../../../images/lets-cake/arrow.png"
                 alt="arrow"
+                placeholder="none"
               />
             </Box>
             <Box>
@@ -177,6 +178,7 @@ export const PainPoints = () => {
                 height={168.55}
                 src="../../../images/lets-cake/arrow.png"
                 alt="arrow"
+                placeholder="none"
               />
             </Box>
             <Box>
@@ -207,6 +209,7 @@ export const PainPoints = () => {
                 height={168.55}
                 src="../../../images/lets-cake/arrow.png"
                 alt="arrow"
+                placeholder="none"
               />
             </Box>
             <Box>

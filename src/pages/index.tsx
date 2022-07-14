@@ -40,25 +40,21 @@ const Index = ({ data }: IndexProps) => {
       linkedinSvgUrl={data.linkedin.publicURL}
       behanceSvgUrl={data.behance.publicURL}
       logoSvgUrl={data.logo.publicURL}
-      hideLogo
     >
-      <Flex width="100%" alignItems="center" mb="-50px" mt="-70px">
-        <ImageContainer width="60%" mb={["60px", "60px", "100px"]}>
+      <Flex width="70%" alignItems="center" justifyContent="center">
+        <ImageContainer
+          mb={["60px", "60px", "100px"]}
+          mr={["0px", "0px", "40px"]}
+        >
           <StaticImage
             alt="header"
             src="../images/header.png"
             placeholder="none"
             quality={100}
-            layout="fullWidth"
+            layout="constrained"
           />
         </ImageContainer>
-        <Flex
-          width="40%"
-          maxWidth="656px"
-          px="20px"
-          flexDirection="column"
-          mt="-70px"
-        >
+        <Flex maxWidth="656px" px="32px" flexDirection="column" mt="-70px">
           <Text
             fontFamily="Raleway"
             fontSize="21px"
@@ -70,9 +66,10 @@ const Index = ({ data }: IndexProps) => {
             HELLO, NICE TO MEET YOU AND WELCOME TO MY WORLD!
           </Text>
           <SummaryText mb="20px">
-            My strengths are empathy, the ability to understand what people
-            feel, and team player. My previous experiences in customer service
-            helped me better understand the needs and fears of customers.
+            I’m a girl passionate about creating usable and beautiful digital
+            products. I love working with people and finding solutions to help
+            them feel better. My background in customer service helped me better
+            understand the needs and the fears of people.
           </SummaryText>
           <Flex flexDirection="row">
             <Box mr="20px">
@@ -100,7 +97,8 @@ const Index = ({ data }: IndexProps) => {
               alt="jobo"
               src="../images/jobo.png"
               placeholder="none"
-              layout="fullWidth"
+              layout="constrained"
+              quality={100}
             />
           }
           title="JOBO"
@@ -114,7 +112,8 @@ const Index = ({ data }: IndexProps) => {
               alt="the-slice"
               src="../images/lets-cake.png"
               placeholder="none"
-              layout="fullWidth"
+              layout="constrained"
+              quality={100}
             />
           }
           title="THE SLICE BAKERY"

@@ -97,10 +97,9 @@ const About = ({ data }: AboutProps) => {
           >
             <Title>Who am I?</Title>
             <Body>
-              I'm a <b>junior UX designer</b> with a backgorund in customer
-              service. I love working with people and help them feeling better
-              and my previous experiences in this role helped me better
-              understand the needs and the fears of customers.
+              I'm an Italian UX designer based in Lisbon with a lot of passion
+              and a background in customer service. I'm an addicted traveler, a
+              food enthusiast and a forever dreamer.
             </Body>
             <Title>Why UX design?</Title>
             <Body>
@@ -121,11 +120,20 @@ const About = ({ data }: AboutProps) => {
             </Body>
             <Title>Why me?</Title>
             <Body>
-              I'll be short. <br />
-              My strengths are <b>empathy</b>, the ability to understand what
-              people feels , and <b>team player</b>.
-              <br /> I bring creativity, enthusiasm and organizational skills to
-              all my works and everywhere I go.
+              <p>
+                I'm a girl who is always looking for new stimuli to be the best
+                part of herself and I adapt to new places very easily. Before my
+                career in the UX I tried different jobs, from receptionist to
+                customer service, to food quality control in a factory and so
+                I'm used, and I like, working in a fast and dynamic environment.
+                My previous experience in customer service helped me to relate
+                to people, be more self-confident and understand in no time what
+                the customer needs.
+              </p>
+              My strengths are <strong>empathy</strong>,{" "}
+              <strong>creativity</strong>, <strong>adaptability</strong> and
+              <strong>team player</strong>. I bring humor, enthusiasm and
+              organization everywhere I go.
             </Body>
           </FlexColumnContainer>
           <Flex
@@ -140,6 +148,7 @@ const About = ({ data }: AboutProps) => {
                 src="../images/cristina.png"
                 placeholder="none"
                 quality={100}
+                layout="constrained"
               />
             </Box>
             <Box display={["block", "block", "none"]}>

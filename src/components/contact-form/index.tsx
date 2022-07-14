@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useCallback, useState } from "react";
 import { Box, Flex, Text, Button } from "rebass";
 import styled from "styled-components";
 import bubbles from "../../images/bubbles.svg";
+import fetch from "node-fetch";
 
 const RootFlex = styled(Flex)`
   background-color: #f5f5f5;
@@ -46,16 +47,66 @@ export const TextArea = styled.textarea`
 `;
 
 export const SubmitButton = styled(Button)`
-  background: #ea4ac5;
-  box-shadow: 0px 4px 20px 5px rgba(234, 74, 197, 0.2),
-    0px 4px 20px 5px rgba(98, 24, 81, 0.38);
+  background: #000;
+  box-shadow: 0px 4px 20px 5px rgba(0, 0, 0, 0.2),
+    0px 4px 20px 5px rgba(0, 0, 0, 0.38);
   border-radius: 20px !important;
   width: 100%;
   height: 72px;
   cursor: pointer;
+
+  :disabled {
+    background: #737373;
+  }
 `;
 
 export const ContactForm = () => {
+  const [name, setName] = useState("");
+  const [surname, setSurname] = useState("");
+  const [email, setEmail] = useState("");
+  const [body, setBody] = useState("");
+
+  const handleSubmit = useCallback(() => {
+    fetch("/.netlify/functions/send-email", {
+      method: "POST",
+      body: JSON.stringify({
+        from: email,
+        name: `${name} ${surname}`,
+        text: body,
+      }),
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error();
+        }
+        console.log(
+          "Il messaggio è stato recapitato, ti risponderemo al più presto."
+        );
+      })
+      .catch((error) => {
+        console.log(error);
+        console.log(
+          "Si è verificato un errore e il messaggio non è stato recapitato. Per favore, riprova più tardi"
+        );
+      });
+  }, []);
+
+  const handleNameChange = useCallback((event: any) => {
+    setName(event.target.value);
+  }, []);
+
+  const handleSurnameChange = useCallback((event: any) => {
+    setSurname(event.target.value);
+  }, []);
+
+  const handleEmailChange = useCallback((event: any) => {
+    setEmail(event.target.value);
+  }, []);
+
+  const handleBodyChange = useCallback((event: any) => {
+    setBody(event.target.value);
+  }, []);
+
   return (
     <RootFlex
       minHeight={["auto", "auto", "350px"]}
@@ -82,23 +133,41 @@ export const ContactForm = () => {
           Did I catch your attention? Get in touch!
         </Text>
         <Box mb="25px" width={["100%", "90%", "60%"]}>
-          <Input type="text" placeholder="First name" aria-label="Nome" />
+          <Input
+            type="text"
+            placeholder="First name"
+            aria-label="Nome"
+            onChange={handleNameChange}
+          />
         </Box>
         <Box mb="25px" width={["100%", "90%", "60%"]}>
-          <Input type="text" placeholder="Last name" aria-label="Nome" />
+          <Input
+            type="text"
+            placeholder="Last name"
+            aria-label="Nome"
+            onChange={handleSurnameChange}
+          />
         </Box>
         <Box mb="25px" width={["100%", "90%", "60%"]}>
           <Input
             type="text"
             placeholder="What's your email? *"
             aria-label="Nome"
+            onChange={handleEmailChange}
           />
         </Box>
         <Box mb="40px" width={["100%", "90%", "60%"]}>
-          <TextArea placeholder="What's your question? *" aria-label="Nome" />
+          <TextArea
+            placeholder="What's your question? *"
+            aria-label="Nome"
+            onChange={handleBodyChange}
+          />
         </Box>
         <Box width={["100%", "90%", "60%"]}>
-          <SubmitButton>
+          <SubmitButton
+            onClick={handleSubmit}
+            disabled={!name || !surname || !email || !body}
+          >
             <Text
               fontSize="24px"
               fontWeight="700"
