@@ -89,7 +89,7 @@ export const ContactForm = () => {
           "Si è verificato un errore e il messaggio non è stato recapitato. Per favore, riprova più tardi"
         );
       });
-  }, []);
+  }, [name, surname, email, body]);
 
   const handleNameChange = useCallback((event: any) => {
     setName(event.target.value);
