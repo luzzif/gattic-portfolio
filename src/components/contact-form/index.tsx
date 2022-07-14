@@ -122,7 +122,7 @@ export const ContactForm = () => {
         width="100%"
       >
         <Text
-          width={["100%", "90%", "30%"]}
+          width={["100%", "90%", "50%", "30%"]}
           fontSize="28px"
           fontWeight="500"
           lineHeight="31px"

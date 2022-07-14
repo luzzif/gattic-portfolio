@@ -41,8 +41,15 @@ const Index = ({ data }: IndexProps) => {
       behanceSvgUrl={data.behance.publicURL}
       logoSvgUrl={data.logo.publicURL}
     >
-      <Flex width="70%" alignItems="center" justifyContent="center">
+      <Flex
+        width={["100%", "90%", "70%"]}
+        alignItems="center"
+        justifyContent="center"
+        flexDirection={["column", "column", "row"]}
+      >
         <ImageContainer
+          width={["auto", "auto", "50%", "50%"]}
+          px={["24px", "24px", "0px"]}
           mb={["60px", "60px", "100px"]}
           mr={["0px", "0px", "40px"]}
         >
@@ -54,7 +61,13 @@ const Index = ({ data }: IndexProps) => {
             layout="constrained"
           />
         </ImageContainer>
-        <Flex maxWidth="656px" px="32px" flexDirection="column" mt="-70px">
+        <Flex
+          mb={["60px", "60px", "100px"]}
+          width={["auto", "auto", "50%", "50%"]}
+          maxWidth="656px"
+          px="32px"
+          flexDirection="column"
+        >
           <Text
             fontFamily="Raleway"
             fontSize="21px"
@@ -66,12 +79,12 @@ const Index = ({ data }: IndexProps) => {
             HELLO, NICE TO MEET YOU AND WELCOME TO MY WORLD!
           </Text>
           <SummaryText mb="20px">
-            I’m a girl passionate about creating usable and beautiful digital
+            I'm a girl passionate about creating usable and beautiful digital
             products. I love working with people and finding solutions to help
             them feel better. My background in customer service helped me better
             understand the needs and the fears of people.
           </SummaryText>
-          <Flex flexDirection="row">
+          <Flex flexDirection="row" mb={["70px", "70px", "0px"]}>
             <Box mr="20px">
               <SocialIcon
                 href="https://www.linkedin.com/in/cristinagatti99/"
@@ -97,7 +110,7 @@ const Index = ({ data }: IndexProps) => {
               alt="jobo"
               src="../images/jobo.png"
               placeholder="none"
-              layout="constrained"
+              layout="fixed"
               quality={100}
             />
           }
@@ -112,7 +125,7 @@ const Index = ({ data }: IndexProps) => {
               alt="the-slice"
               src="../images/lets-cake.png"
               placeholder="none"
-              layout="constrained"
+              layout="fixed"
               quality={100}
             />
           }

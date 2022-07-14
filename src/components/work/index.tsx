@@ -43,12 +43,19 @@ export const Work = ({
       >
         <Flex
           flexDirection={["column", "column", reversed ? "row-reverse" : "row"]}
-          py={["24px", "24px", "0px"]}
+          pb={["24px", "24px", "0px"]}
           justifyContent={["flex-start", "space-between"]}
           alignItems="center"
           width="100%"
         >
-          <Box mb={["24px", "24px", "0px"]}>{image}</Box>
+          <Box
+            style={{ borderRadius: 20, overflow: "hidden" }}
+            mb={["24px", "24px", "0px"]}
+            height={["auto", "auto", "100%"]}
+            width={["100%", "100%", "60%"]}
+          >
+            {image}
+          </Box>
           <Flex
             flexGrow="1"
             justifyContent="center"

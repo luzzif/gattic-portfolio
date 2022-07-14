@@ -118,23 +118,6 @@ const About = ({ data }: AboutProps) => {
               one, to deep dive into the UX and put in practice what I've
               learned.
             </Body>
-            <Title>Why me?</Title>
-            <Body>
-              <p>
-                I'm a girl who is always looking for new stimuli to be the best
-                part of herself and I adapt to new places very easily. Before my
-                career in the UX I tried different jobs, from receptionist to
-                customer service, to food quality control in a factory and so
-                I'm used, and I like, working in a fast and dynamic environment.
-                My previous experience in customer service helped me to relate
-                to people, be more self-confident and understand in no time what
-                the customer needs.
-              </p>
-              My strengths are <strong>empathy</strong>,{" "}
-              <strong>creativity</strong>, <strong>adaptability</strong> and
-              <strong>team player</strong>. I bring humor, enthusiasm and
-              organization everywhere I go.
-            </Body>
           </FlexColumnContainer>
           <Flex
             justifyContent="center"
@@ -157,11 +140,31 @@ const About = ({ data }: AboutProps) => {
                 src="../images/cristina.png"
                 placeholder="none"
                 quality={100}
+                layout="constrained"
               />
             </Box>
           </Flex>
         </Flex>
       </OuterContainer>
+      <Flex width={["100%", "100%", "60%"]} flexDirection="column" px="20px">
+        <Title>Why me?</Title>
+        <Body>
+          <p style={{ marginTop: 0 }}>
+            I'm a girl who is always looking for new stimuli to be the best part
+            of herself and I adapt to new places very easily. Before my career
+            in the UX I tried different jobs, from receptionist to customer
+            service, to food quality control in a factory and so I'm used, and I
+            like, working in a fast and dynamic environment. My previous
+            experience in customer service helped me to relate to people, be
+            more self-confident and understand in no time what the customer
+            needs.
+          </p>
+          My strengths are <strong>empathy</strong>, <strong>creativity</strong>
+          , <strong>adaptability</strong> and
+          <strong>team player</strong>. I bring humor, enthusiasm and
+          organization everywhere I go.
+        </Body>
+      </Flex>
       <BoldFooterText>
         Want to talk about what I could bring to you or why am I the right fit
         for you? Don't be shy, let's connect!
