@@ -1,5 +1,5 @@
-const emailClient = require("@sendgrid/mail");
-emailClient.setApiKey(process.env.SENDGRID_API_KEY);
+const Sparkpost = require("sparkpost");
+const emailClient = new Sparkpost(process.env.SPARKPOST_API_KEY);
 
 exports.handler = async (event, context, callback) => {
   const { body } = event;
@@ -31,11 +31,13 @@ exports.handler = async (event, context, callback) => {
     });
   }
   try {
-    await emailClient.send({
-      to: process.env.TO_ADDRESS,
-      from,
-      subject: `Richiesta di informazioni da ${name}`,
-      text,
+    await emailClient.transmissions.send({
+      content: {
+        from,
+        subject: `Portfolio contact from ${name}`,
+        html: `<html><body>${text}</body></html>`,
+      },
+      recipients: [{ address: process.env.TO_ADDRESS }],
     });
     callback(null, { statusCode: 204 });
   } catch (error) {
