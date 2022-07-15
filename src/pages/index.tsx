@@ -51,6 +51,7 @@ const Index = ({ data }: IndexProps) => {
           width={["auto", "auto", "50%", "50%"]}
           px={["24px", "24px", "0px"]}
           mb={["60px", "60px", "100px"]}
+          mt={["60px", "60px", "60px"]}
           mr={["0px", "0px", "40px"]}
         >
           <StaticImage
@@ -63,6 +64,7 @@ const Index = ({ data }: IndexProps) => {
         </ImageContainer>
         <Flex
           mb={["60px", "60px", "100px"]}
+          mt={["60px", "60px", "60px"]}
           width={["auto", "auto", "50%", "50%"]}
           maxWidth="656px"
           px="32px"
