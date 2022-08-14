@@ -25,11 +25,6 @@ const ImageContainer = styled(Box)`
   position: relative;
 `;
 
-const HeaderImage = styled(Image)`
-  position: absolute;
-  top: 0px;
-`;
-
 interface IndexProps {
   data: any;
 }
@@ -109,10 +104,25 @@ const Index = ({ data }: IndexProps) => {
         <SpacedWork
           image={
             <StaticImage
+              alt="the-slice"
+              src="../images/my-weather.png"
+              placeholder="none"
+              layout="fullWidth"
+              quality={100}
+            />
+          }
+          title="MyWeather"
+          description="Weather Mobile App with light and dark theme"
+          to="/my-weather"
+        />
+        <SpacedWork
+          reversed
+          image={
+            <StaticImage
               alt="jobo"
               src="../images/jobo.png"
               placeholder="none"
-              layout="fixed"
+              layout="fullWidth"
               quality={100}
             />
           }
@@ -121,13 +131,12 @@ const Index = ({ data }: IndexProps) => {
           to="/jobo"
         />
         <Work
-          reversed
           image={
             <StaticImage
               alt="the-slice"
               src="../images/lets-cake.png"
               placeholder="none"
-              layout="fixed"
+              layout="fullWidth"
               quality={100}
             />
           }

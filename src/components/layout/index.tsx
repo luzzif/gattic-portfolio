@@ -1,19 +1,32 @@
-import React, { ReactNode } from "react";
-import styled from "styled-components";
+import React, { ReactNode, useCallback, useState, useEffect } from "react";
+import styled, { css } from "styled-components";
 import { Link } from "gatsby";
 import { SocialIcon } from "../social-icon";
 import { Box, Flex } from "rebass";
 import "./layout.css";
 
-const Header = styled(Flex)`
-  height: 128px;
-  margin-bottom: 40px;
+const Header = styled(Flex)<{
+  noHeaderSpacing?: boolean;
+  dark?: boolean;
+  hero?: boolean;
+}>`
+  height: ${(props) => (props.dark ? "80px" : "128px")};
+  width: 100%;
+  position: ${(props) => (props.noHeaderSpacing ? "fixed" : "relative")};
+  margin-bottom: ${(props) => (props.noHeaderSpacing ? "0px" : "40px")};
   align-items: center;
-  background-color: #fff;
+  z-index: 100;
+  transition: background-color ease 0.2s;
+  ${(props) =>
+    !props.hero &&
+    props.dark &&
+    css`
+      background-color: #161616;
+    `}
 `;
 
-const MenuItem = styled(Link)<{ last?: boolean }>`
-  color: initial;
+const MenuItem = styled(Link)<{ last?: boolean; dark?: boolean }>`
+  color: ${(props) => (props.dark ? "#fff" : "initial")};
   text-decoration: none;
   font-size: 19px;
   font-style: normal;
@@ -23,8 +36,8 @@ const MenuItem = styled(Link)<{ last?: boolean }>`
   margin-right: ${(props) => (props.last ? 0 : 29)}px;
 `;
 
-const DownloadableMenuItem = styled.a<{ last?: boolean }>`
-  color: initial;
+const DownloadableMenuItem = styled.a<{ last?: boolean; dark?: boolean }>`
+  color: ${(props) => (props.dark ? "#fff" : "initial")};
   text-decoration: none;
   font-size: 19px;
   font-style: normal;
@@ -40,18 +53,19 @@ const Content = styled.div`
   align-items: center;
 `;
 
-const Footer = styled(Flex)`
-  margin: 122px 0;
+const Footer = styled(Flex)<{ dark?: boolean }>`
+  background-color: ${(props) => (props.dark ? "#161616" : "initial")};
+  padding: 122px 0;
   justify-content: center;
 `;
 
-const FooterEmail = styled.a`
+const FooterEmail = styled.a<{ dark?: boolean }>`
   font-size: 21px;
   font-style: normal;
   font-weight: 400;
   line-height: 28px;
   letter-spacing: 0em;
-  color: #000;
+  color: ${(props) => (props.dark ? "#fff" : "#000")};
 `;
 
 interface LayoutProps {
@@ -60,6 +74,8 @@ interface LayoutProps {
   behanceSvgUrl: string;
   logoSvgUrl: string;
   hideSocials?: boolean;
+  noHeaderSpacing?: boolean;
+  dark?: boolean;
 }
 
 export const Layout = ({
@@ -67,23 +83,49 @@ export const Layout = ({
   linkedinSvgUrl,
   behanceSvgUrl,
   hideSocials,
+  noHeaderSpacing,
+  dark,
 }: LayoutProps) => {
+  const [hero, setHero] = useState(
+    !(typeof window !== "undefined" && !window.scrollY)
+  );
+
+  const handleScroll = useCallback(() => {
+    setHero(!window.scrollY);
+  }, [window.scrollY]);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
-      <Header px={["24px", "36px", "75px"]} justifyContent="flex-end">
+      <Header
+        px={["24px", "36px", "75px"]}
+        justifyContent="flex-end"
+        noHeaderSpacing={noHeaderSpacing}
+        dark={dark}
+        hero={hero}
+      >
         <MenuItem
+          dark={dark}
           activeStyle={{ color: "#EA4AC5", textDecoration: "underline" }}
           to="/"
         >
           work
         </MenuItem>
         <MenuItem
+          dark={dark}
           activeStyle={{ color: "#EA4AC5", textDecoration: "underline" }}
           to="/about/"
         >
           about
         </MenuItem>
         <DownloadableMenuItem
+          dark={dark}
           last
           target="_blank"
           rel="noopener noreferrer"
@@ -94,17 +136,18 @@ export const Layout = ({
       </Header>
       <Content>{children}</Content>
       <Footer
+        dark={dark}
         width="100%"
         flexDirection={["column", "column", "row"]}
         alignItems={["center"]}
-        mt="60px"
-        mb="80px"
+        pt="60px"
+        pb="80px"
       >
         <Box
           mr={hideSocials ? "0px" : ["0px", "0px", "49px"]}
           mb={hideSocials ? "0px" : ["16px", "16px", "0px"]}
         >
-          <FooterEmail href="mailto:gatticristina99@gmail.com">
+          <FooterEmail dark={dark} href="mailto:gatticristina99@gmail.com">
             gatticristina99@gmail.com
           </FooterEmail>
         </Box>
